@@ -1,0 +1,41 @@
+The Rotary CLub of Kathmandu Midtown was build using the following technologies.
+
+1. Front-End Technologies: HTML, CSS, Bootstrap, JQuery and VueJs Framework.
+2. Backend Technologies: Wordpress as Content Management System with Custom PHP.
+3. Database: Mysql
+4. Hosting Requirement: Any hosting server with MySql, PHP and SMTP configured.
+
+
+Description:
+The website follows the Single Page Applicatoin(SPA pattern) using Vue Js which is modern and popular as of now. The frontend of the website is built using CSS and bootstrap and ofcourse Vue Js. 
+The front end application consumes the API of Wordpress API. The data is then structured and displayed using Vue js.
+//
+For example 
+Upcocommingevents.vue
+this.$API
+      .getEvents()
+      .then(data => {
+        this.events = data.data;
+        this.isLoaded = true;
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+
+api.js
+const baseUrl = "https://rotaryclubkathmandumid-town.org/admin/wp-json/wp/v2/";
+import axios from "axios";
+
+class APIService {
+    getEvents() {
+        return axios.get(baseUrl + 'events');
+    }
+}
+
+The Wordpress is used as a Headless CMS which means its only used for the Admin dashboard. For that purpose several plugins were used which you can study using the credentials provided already. The name of the plugin is CPT/UI. You can easily ADD/Remove/Edit/Delete existing custom data types.
+You can use the following paths to fetch the data from api
+https://rotaryclubkathmandumid-town.org/admin/wp-json/wp/v2/{custom field name} 
+
+For example if you create a new custom field name "blog" , your path would be
+https://rotaryclubkathmandumid-town.org/admin/wp-json/wp/v2/blogs
