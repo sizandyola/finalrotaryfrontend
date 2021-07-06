@@ -87,9 +87,7 @@
           <p>
             <span class="presidient-name">Past President Dr Chandra Lekha Tuladhar</span>
             <br />
-            Founder of the Rotaract Club of Kathmandu Mid-Town, and <br>
-The Interact Clubs of Kirtipur, Panga, and Thaiba. <br>
-Youth Service Chair for over 30 years. <br>
+            Founder of the Rotaract Club of Kathmandu Mid-Town, and The Interact Clubs of Kirtipur, Panga, and Thaiba. Youth Service Chair for over 30 years. <br>
 Major Donor <br>
           </p>
         </div>
@@ -112,6 +110,17 @@ Major Donor <br>
           </div>
           <p>
             <span class="presidient-name">Past President Neeva Mathema Pradhan</span>
+            <br />Major Donor
+          </p>
+        </div>
+
+        <div class="clear"></div>
+        <div class="person-item mt-3">
+          <div class="image-box mr-3">
+            <span style="background-image: url(/images/about/knsthapa.jpg); background-position: top;"></span>
+          </div>
+          <p>
+            <span class="presidient-name">Past President KNS Thapa</span>
             <br />Major Donor
           </p>
         </div>
@@ -182,7 +191,7 @@ Major Donor <br>
 export default {
   name: "AboutClubPage",
   metaInfo: {
-    title: "About Our Club | Rotary Club of Kathmandu-Midtown",
+    title: "About Our Club | Rotary Club of Kathmandu-Mid-Town",
     meta: [
       { charset: "utf-8" },
       {

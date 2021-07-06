@@ -29,6 +29,10 @@
   background: var(--primary-blue);
 }
 
+._2p3a{
+  width: 100% !important;
+}
+
 .clear {
   clear: both;
 }

@@ -5,7 +5,7 @@
       <hr class="my-4" />
 
       <button
-        v-for="cat in filteredList"
+        v-for="cat in categories"
         :key="cat.id"
         class="btn btn-primary-blue button-rotary-photos"
         @click="changeSelection(cat.id)"
@@ -167,7 +167,7 @@ export default {
       .getPhotos()
       .then(data => {
         this.categories = data.data;
-        this.changeSelection(this.categories[this.categories.length - 1].id);
+        this.changeSelection(this.categories[0].id);
       })
       .catch(error => {
         console.log(error);

@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="text-left">Sponsored Clubs</h1>
     <hr class="my-4" />
-    <h4 class="mt-3">Sponsored Rotary Club</h4>
+    <h4 class="mt-3">Sponsored Rotary Clubs</h4>
     <ul>
       <li>Rotary Club of New Road City</li>
       <li>Rotary Club of Pashupati</li>

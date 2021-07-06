@@ -3,9 +3,48 @@
     <h1 class="text-left container pt-3">Looking For Funding</h1>
     <hr class="my-4 container" />
 
-    <NavikaranOrphanage />
+    
 
 <!--  -->
+<div class="container p-2" id="brick-factory">
+    <div class="custom-card">
+      <div class="row ">
+        <div class="col-md-4 text-center">
+          <img src="https://rotarymidtown.org.np/admin/wp-content/uploads/2021/04/PHOTO-BRICK-FACTORY-home-page.jpg" class="img-fluid mt-4" alt />
+        </div>
+        <div class="col-md-8 ">
+          <h4>Seeking Support for the Education of Disadvantaged Children of Brick Factory Workers</h4>
+
+          <p class="text-justify">
+            Background: Brick making is a seasonal industry which operates during the winter months soon after the monsoon and harvesting season. The professional workers are hired prior to the season from villages far and wide and live in the temporary shelter made of unbaked bricks in the kiln area for over seven months. Since both the parents are employed the children accompany them without any thought of their immediate and future education. It is but reasonable that schools do not grant such a long leave hence often parent have to choose between earning and education and obviously the first is chosen it being their profession for sustenance of their family. Since parents have taken their children out of school against the school regime at the risk of termination from school readmission after six months absentee is not guaranteed.
+          </p>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-justify">
+           Besides how would the children be able to cope with the studies when during this period they would be playing ( the very young ones ) the older ones are helping their parents in the same trade of brick making .
+Thus the NGO KOPILA NEPA with six satellite centers provides humanitarian service for these disadvantaged mobile children who are dropouts because of necessity. So far governmental support has not be granted as according to their ruling an Institute has to be functional for the whole year to be eligible for support. However we are looking for loop holes in the system to help in sustaining such program.
+The main center KOPILA Nepa at Sanu Gaon provides the following: <br> <br>
+Preprimary and primary classes which is operational for some local children the and those of the brick factory workers who remain back to maintain the kiln throughout the year. On completion they are helped to getting admission into regular government school (with which this Institute has an understanding ) by even paying the initial admission fee and uniform  for them.   <br> <br>
+Adult literacy and skill sewing class for the female gender local and brick workers. Is also being operated. This a government recognized training program for one year with awarding of valid certificate. Many women seek for further three months advanced course or they venture out to open small outlet or seek employment in the same profession.
+Classes for the older children of brick factory workers during the season <br> <br>
+Provision of nutritious Mid- Day meal <br>
+Sustaining the transport system for the center <br>
+Provision of uniform plus educational material for the six month academic session <br>
+Running of Day Care Center for children with Cerebral Palsy and in co-operation of these children in the program and activities of the normal children <br>
+</p>
+  <button class="btn btn-info container mt-2">
+            <a href="#">LOOKING FOR FUNDING</a>
+          </button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+
   <div class="container p-2" id="vocational-training">
     <div class="custom-card">
       <div class="row ">
@@ -73,6 +112,7 @@ Please reach out to us at <router-link to="/contact-us/contact-information">‘C
         </div>
       </div>
     </div>
+    <NavikaranOrphanage />
 <!--  -->
 
   </div>

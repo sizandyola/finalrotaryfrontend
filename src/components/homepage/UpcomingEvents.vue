@@ -35,8 +35,22 @@
                   </div>
                 </div>-->
                 <div class="events container" v-for="(ev,index) in compareDate" :key="index">
-                  <div>
-                    <p class="event-title mb-3">{{ev.acf.event_name}}</p>
+                  
+                  <div class="row">
+                    <div class="col-md-12" style="padding-left:0">
+                      <p class="event-title mb-2">{{ev.acf.event_name}}</p>
+                    </div>
+                    <div class="col-md-4" style="padding-left:0" v-if="ev.acf.image">
+                      <div class="img-wrapper">
+                        
+                        <img :src="ev.acf.image"  class="img-fluid" alt="">
+                      </div>
+                      
+                    </div>
+
+                    <div :class="ev.acf.image?'col-md-8':'col-md-12'" style="padding-left:0">
+                       <div>
+                    
                     <p class="event-timing">
                       <i class="fas fa-calendar-week events-icon mr-2"></i>
                       {{ev.acf.event_date}}
@@ -53,9 +67,17 @@
                       Time: {{ev.acf.event_time}}
                     </p>
 
-                    <p class="details">{{ev.acf.details}}</p>
-                    <hr class="bg-white" />
+                   
+                    
                   </div>
+                    </div>
+                    <div class="col-md-12 mt-3" style="padding-left:0">
+                       <p class="details">{{ev.acf.details}}</p>
+                         <hr class="bg-white" />
+                    </div>
+                  
+                  </div>
+                 
                 </div>
                 <div class="d-flex flex-column align-items-center justify-content-center" v-if="compareDate.length<1">
   <h2
@@ -72,19 +94,7 @@
         </div>
         <div class="col-md-6">
           <div class="row">
-            <div class="col-md-12 card">
-              <h2 class="mt-2 pt-2 pb-2 text-center">
-                <i class="fas fa-users mr-2"></i>Listen To Our Members and Guests
-              </h2>
-              <iframe
-                width="100%"
-                height="250"
-                :src="featuredVideo"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
+           
             <div class="col-md-12 card mt-2">
               <!-- <h2 class="mt-2 pt-2">
                 <i class="fab fa-facebook mr-2" style="color:#3b5998"></i>Facebook Feed
@@ -101,6 +111,19 @@
                   allow="encrypted-media"
                 ></iframe>
               </center>
+            </div>
+             <div class="col-md-12 card">
+              <h2 class="mt-2 pt-2 pb-2 text-center">
+                <i class="fas fa-users mr-2"></i>Listen To Our Members and Guests
+              </h2>
+              <iframe
+                width="100%"
+                height="250"
+                :src="featuredVideo"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -152,6 +175,7 @@ export default {
       .getEvents()
       .then(data => {
         this.events = data.data;
+        
         this.isLoaded = true;
       })
       .catch(error => {

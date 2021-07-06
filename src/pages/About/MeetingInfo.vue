@@ -30,17 +30,17 @@
         </tr>
         <tr>
           <td>Weekly Meeting</td>
-          <td>Every Friday morning meet at 7:30AM for breakfast and fellowship. The meeting proper runs from 8 to 9 AM, followed by more breakfast and fellowship.</td>
+          <td>Please check the calendar on our web page for the latest meeting information.</td>
         </tr>
         <tr>
           <td>Web page</td>
           <td>
-            <a href="http://rotaryclubkathmandumid-town.org">http://rotaryclubkathmandumid-town.org</a>
+            <a href="https://rotarymidtown.org.np/#/">https://rotarymidtown.org.np/#/</a>
           </td>
         </tr>
         <tr>
           <td>Meeting location</td>
-          <td>Hotel de l’Annapurna, Durbar Marg</td>
+          <!-- <td>Hotel de l’Annapurna, Durbar Marg</td> -->
         </tr>
       </table>
     </div>

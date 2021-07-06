@@ -50,6 +50,53 @@ convenience.
           </div>
         </div>
       </div>
+
+         <div class="custom-card">
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <!-- <h4 class="p-1">Spouses’ Project – Mata Tirtha Old Age Home</h4> -->
+             <h4 class="p-1">Poetry Writing Contest on “Emotional/Mental Well-being and Cultural Identity”</h4>
+            <div class="row p-0">
+              <div class="col-md-4">
+                <img src="/images/our-projects/poetry.png" class="img-fluid mt-4" />
+              </div>
+              <div class="col-md-8">
+               
+                <p class="text-justify p-3">
+              The Poetry Writing Contest organized by Rotary Club of Kathmandu Mid-town and Daya Foundation in collaboration with UNICEF Nepal was successfully concluded on 27 November 2020 at 5 PM via Zoom. The theme of this contest was “Emotional/Mental Well-being and Cultural Identity” to address the growing mental health issues especially among youths and the importance of culture in establishing one’s own identity. The contest was open to youths from age group 15 to 30 year old.
+The main purpose of the Contest was to raise awareness regarding emotional/mental well-being, promote culture through arts (poetry), and encourage youth to be creative and reflect the importance of their culture through creative arts. <br> <br>
+
+                </p>
+              </div>
+            </div>
+        
+ 
+          </div>
+          <div class="col-md-12">
+            <p>
+              The participants were encouraged to submit their original writing in Nepali or English on topics like “Emotional/Mental Well-Being”, “Cultural Identity” and “Cultural Identity supporting Emotional/Mental Well-Being” or any topic of choice in line with these three titles by November 15, 2020. The submissions were anonymously reviewed by experienced and qualified literary experts who were: <br> <br>
+A) English Category: James C Hopkins, Lisa Choegyal, and Tania Dhakwaa <br> <br>
+B) Nepali Category: Anupam Pokhrel, Man Bahadur Mukhiya, and Dr. Ram Prasad Dahal <br> <br>
+
+The two sponsoring organizations were represented by Rajesh B Pradhan, President Daya Foundation and by Keepa M Handa, Executive Member, Health.  Ltn, Gen, KNS Thapa, President RC Kathmandu Midtown. <br> <br>
+
+The main highlight of the 2-hour final program was the announcement of 10 winners of the contest followed by a panel discussion on “Emotional/Mental Well-Being & Literary Avenues/Platforms for Youth Voices”. <br> <br>
+
+The event was a success with participation from 300+ youths and many dignitaries from several institutions. Aarya Bajrachayra from Rupy's International School, Shivila Gc from Kathmandu University School of Management, Rachita Uprety from Silver Mountain School Of Hotel Management, Rubi Bhandari from Softwarica College, and Shreeya Shrestha from Rato Bangala Schoolare the winners from English category and Abinash Gajurel, a graduate, Chadani Acharya from Medhavi College, Bigyan Subedi from IOM, T.U., Smriti Adhikari from Tribhuvan University School of Management, and Sushila Rai from Diktel Multiple Campus are the winners from Nepali category who have won NRs. 10,000/- each as prize money. Following the announcement of winners, panelists Man Bahadur Mukhia (Literary figure), Tania Dhakwa (Chief of Communications at UNICEF Nepal), Dr. Sagun Ballav Panta(Psychiatrist at Teaching Hospital), and Dr. Rojina Manandhar (Psychologist/Clinical Hypnotherapist) shared their take on Emotional and Mental Health, and the importance of literature in expressing oneself. <br> <br>
+
+Chief Guest of Honor, District Governor Rajib Pokharel along with the sponsoring organizations shared positive notes regarding this type of initiative and collaborative effort for youth welfare at national level. <br> <br>
+
+Representing the organizing team, Moderator and MC Neeva Mathema Pradhan is Executive Member and Founder of Daya Foundation a non-profit organization that provides financial, technical and volunteer assistance to various projects in the areas of Education, Health and Culture. The poetry contest is part of Daya Foundation’s initiative to promote Culture. Past President, Rotary Club of Kathmandu Mid-town, Neeva M Pradhan also oversees "Young Professional Vocational/Skills Training" whose objective is to help develop youth skills and equip them with various toolsto apply in the practical field. UNICEF Nepal, headed by Tania Dhakhwa, Chief of Communications Unicef, collaborated with Daya Foundation and RC Kathmandu Mid-Town to raise awareness on Mental Health and the rise in depressive illnesses and suicide cases among youth in recent months. All of these institutions promoted and live streamed the event in their respective Facebook pages.
+
+ <img src="/images/our-projects/zoom.jpg" class="img-fluid mt-4" />
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
       <!-- YouthVocationalSkills -->
       <YouthVocationalSkills />
 

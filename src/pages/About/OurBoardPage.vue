@@ -99,7 +99,7 @@ export default {
         {
           name: "Bhairaja Panday",
           imageUrl: `bhairaja.jpg`,
-          title: "Fund Raising Chair"
+          title: "Fund Raising Chair & Club Admin Chair"
         },
          {
           name: "Dr. Chadra Lekha Tuladhar",
@@ -121,11 +121,11 @@ export default {
           imageUrl: `paras.jpg`,
           title: "Community Projects Chair"
         },
-         {
-          name: "Govinda Chipalu",
-          imageUrl: `govinda-chipalu.jpg`,
-          title: "Club Administration Chair"
-        },
+        //  {
+        //   name: "Govinda Chipalu",
+        //   imageUrl: `govinda-chipalu.jpg`,
+        //   title: "Club Administration Chair"
+        // },
          {
           name: "Rabi Karmacharya",
           imageUrl: `rabi-karmacharya.jpg`,

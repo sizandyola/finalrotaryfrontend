@@ -10,7 +10,7 @@
         <div class="col-md-4 mt-3">
           <div class="card" style="display:table">
             <div class="card-img-top">
-              <img src="/images/our-projects/simpani-gairigaon.jpg" class="img-fluid" alt />
+              <img src="/images/our-projects/simpani-gairigaon-closure.jpg" class="img-fluid" alt />
             </div>
             <div class="card-body">
               <div class="card-title">
@@ -49,7 +49,7 @@
             </div>
             <div class="card-body">
               <div class="card-title">
-                <h2>Education Support in Sindhupalchok and Nuwakot</h2>
+                <h2>Early Years Education Support Project in Nuwakot and Sindulpalchowk</h2>
               </div>
               <div class="card-text read-more">
                 <i class="fas fa-external-link-alt mr-2"></i>
@@ -222,6 +222,7 @@ hr {
 
 .card-title {
   /* min-height: 500px; */
+  font-size: 15px;
   height: 80px;
   overflow: hidden;
 }

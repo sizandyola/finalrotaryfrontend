@@ -20,7 +20,7 @@ import UpcommingEvents from "./../components/homepage/UpcomingEvents";
 export default {
   name: "HomePage",
   metaInfo: {
-    title: "Home | Rotary Club of Kathmandu-Midtown",
+    title: "Home | Rotary Club of Kathmandu-Mid-Town",
     meta: [
       { charset: "utf-8" },
       {

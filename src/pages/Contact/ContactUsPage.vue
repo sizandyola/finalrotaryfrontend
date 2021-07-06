@@ -7,7 +7,7 @@
         <div class="fav-icon col-lg-4 text-center">
           <i class="fas fa-map-marker-alt"></i>
           <h5>Venue</h5>
-          <p class="py-3">
+          <!-- <p class="py-3">
             Hotel de I'Annapurna
             <br />Durbar Marg
             <br />Kathmandu, Nepal
@@ -17,7 +17,7 @@
               href="https://www.google.com/maps/place/Hotel+Del'+Annapurna+Swimming+Pool/@27.7109994,85.3141391,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb19017fa3b0cf:0xd988bc5b5c01f9df!8m2!3d27.7109994!4d85.3163278"
               target="_blank"
             >Google Map Link</a>
-          </p>
+          </p> -->
         </div>
 
         <!-- <div class="fav-icon col-lg-3 text-center">

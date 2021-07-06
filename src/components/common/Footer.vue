@@ -12,41 +12,67 @@
             </p>
           </div>
         </div>
+        
         <div class="col-md-5 px-4">
           <h6>VISIT OUR CLUB</h6>
           <p>
+            Until further notice our weekly meetings will be held by Zoom. See details in the calendar on our home page. If you are interested in joining the meeting, please email us at    <router-link to="/contact-us/contact-information">
+              <a class="contact-us">CONTACT US </a>
+            </router-link>and we will send you the link.
+          </p>
+          <!-- <p>
             <br />The Rotary Club of Kathmandu Mid-Town meets every Friday morning at 7:30 AM at the Hotel de I-Annapurna on Durbar Marg in Kathmandu. Visiting Rotarians are most welcomed.
             <br />As a courtesy, we request that visiting Rotarians and friends inform us first at -
             <router-link to="/contact-us/contact-information">
               <a class="contact-us">CONTACT US</a>
             </router-link>
-          </p>
+          </p> -->
         </div>
 
         <div class="col-md-3 mt-3 mb-5">
           <h6>Links</h6>
-          <div class="social mb-3">
-            <a
+          <table class="social mb-3">
+            <tr>
+              <td>   <a
               href="https://www.facebook.com/RotaryClubOfKathmanduMidtown/"
               title="facebook"
               target="_blank"
             >
               <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
-            </a>
+            </a></td>
 
-            <a
+            <td>     <a
               href="http://rotarydistrict3292.org/"
               class="social-dstrict"
               title="Disrtict Link"
               target="_blank"
             >
               <i class="fas fa-globe top-icons" aria-hidden="true"></i>
-              <!-- <span class="icon-text">District Website</span> -->
-            </a>
+              <br>
+          
+            </a></td>
+         
+
+         
+
             <!-- <a href="#">
                   <i class="fab fa-instagram fa-2x mx-3" aria-hidden="true"></i>
             </a>-->
-          </div>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="text-center"> 
+                <a
+              href="http://rotarydistrict3292.org/"
+              class="text-center"
+              title="District Link"
+              target="_blank"
+            >
+                   <span class="text-center" style="font-size:16px">District 3292 <br> web page</span>
+                </a>
+                   </td>
+            </tr>
+          </table>
           <!-- <router-link to="/contact-us/contact-information" class="btn btn-primary-blue">
                 <a>Contact Us</a>
           </router-link>-->

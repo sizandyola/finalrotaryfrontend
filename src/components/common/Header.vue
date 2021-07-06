@@ -67,6 +67,7 @@
                     v-for="child in item.children"
                     :key="child.id"
                     class="nav-child child"
+                    v-if="!child.hide"
                     @click="dropOffEvent"
                   >
                     <router-link :to="{ name: child.name, hash: child.hash }">{{child.name}}</router-link>
@@ -110,11 +111,14 @@
                         v-for="child in item.children"
                         class="ml-3 mt-1 child"
                         :key="child.id"
+                         v-if="!child.hide"
                         @click="sidebarStatus=false"
                       >
+                     
                         <router-link :to="{ name: child.name, hash: child.hash }">
                           <!-- <router-link :to="`${item.path}/${child.path}`"> -->
                           <i class="fas fa-angle-double-right"></i>
+                          
                           {{child.name}}
                         </router-link>
                       </li>
@@ -305,6 +309,7 @@ ul li {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 15%;
+  font-size: 19px;
 }
 .nav-header {
   font-weight: bold;

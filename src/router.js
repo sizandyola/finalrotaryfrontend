@@ -22,6 +22,7 @@ import OurFriends from "./pages/Archives/OurFriends.vue"
 //calendar section
 import Calendar from "./pages/Calendar/Calender.vue"
 import CalendarPage from './pages/Calendar/CalendarPage.vue'
+import WeeklySpeakerCalendar from './pages/Calendar/WeeklySpeakerCalendar.vue'
 
 
 //contact section
@@ -40,6 +41,8 @@ import EarthquakeReliefAssistance from "./pages/Projects/EarthquakeReliefAssista
 import CommunityProjects from "./pages/Projects/CommunityProjects.vue";
 import GlobalGrants from "./pages/Projects/GlobalGrants.vue";
 import LookingForFunding from "./pages/Projects/LookingForFunding.vue"
+
+import SimpaniReadMore from "./pages/Projects/SimpaniReadMore.vue";
 
 
 
@@ -144,6 +147,13 @@ export default new Router({
           name: "Global Grants",
           component: GlobalGrants
         },
+        {
+          path: "global-grants/simpani-gairigaon",
+          name: "Global Grants",
+          component: SimpaniReadMore,
+          hide:true
+        },
+
       
         {
           path: "community-projects",
@@ -280,10 +290,19 @@ export default new Router({
       path: "/calendar",
       name: "calendar",
       component: Calendar,
-      children: [{
-          path: "rotary-designated-months",
-          name: "rotary designated months",
-          component: CalendarPage
+      children: [
+        
+        // {
+        //   path: "rotary-designated-months",
+        //   name: "rotary designated months",
+        //   component: CalendarPage
+
+        // },
+
+        {
+          path: "weekly-speaker-calendar",
+          name: "Weekly Speaker Calendar",
+          component: WeeklySpeakerCalendar
 
         },
 

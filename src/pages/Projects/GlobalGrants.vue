@@ -64,6 +64,33 @@ We are happy to acknowledge our partners: The Rotary Club of Salt Lake City, RID
         </div>
       </div>
 
+      <p id="simpani-gairigaon"></p>
+      <div class="custom-card">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="/images/our-projects/simpani-gairigaon-closure.jpg" class="img-fluid" />
+          </div>
+          <div class="col-md-8">
+            <h4
+              class="p-3"
+            >Recently Closed: Simpani Gairigaon Lift Water Supply for Drinking and Sanitation (GG1754006) in collaboration with Masan-East Rotary Club (S Korea)</h4>
+
+            <p
+              class="text-justify p-3"
+            >These villagers lost their water supply when natural springs dried up because of the 2015 earthquake. More than 30 families in the village of Simapani (Dhading) are now benefiting from this new water system. This project has helped to keep the community together by redirecting water to their village so that they do not need to relocate.
+            
+            <br> <br>
+            <router-link to="/our-projects/global-grants/simpani-gairigaon">Read More</router-link>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+     
+
+
+
       <p id="hearing-loss"></p>
       <div class="custom-card">
         <div class="row">
@@ -80,6 +107,7 @@ We are happy to acknowledge our partners: The Rotary Club of Salt Lake City, RID
               />
               This year with the help of the Rotary Club of Potomac-Bethesda, RID 7620, USA, we helped to preventing hearing loss among Nepalese children by providing auditory screening and surgical equipment, by screening children for correctible ear problems, by providing ear surgery for children and by promoting increased awareness and prevention.
             </p>
+            
           </div>
           <div class="col-md-4 text-center">
             <img src="/images/our-projects/hearing-loss-project.jpg" class="img-fluid" />
@@ -87,23 +115,7 @@ We are happy to acknowledge our partners: The Rotary Club of Salt Lake City, RID
         </div>
       </div>
 
-<p id="simpani-gairigaon"></p>
-      <div class="custom-card">
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <img src="/images/our-projects/simpani-gairigaon.jpg" class="img-fluid" />
-          </div>
-          <div class="col-md-8">
-            <h4
-              class="p-3"
-            >Recently Closed: Simpani Gairigaon Lift Water Supply for Drinking and Sanitation (GG1754006) in collaboration with Masan-East Rotary Club (S Korea)</h4>
 
-            <p
-              class="text-justify p-3"
-            >These villagers lost their water supply when natural springs dried up because of the 2015 earthquake. More than 30 families in the village of Simapani (Dhading) are now benefiting from this new water system. This project has helped to keep the community together by redirecting water to their village so that they do not need to relocate.</p>
-          </div>
-        </div>
-      </div>
      
     </div>
   </div>

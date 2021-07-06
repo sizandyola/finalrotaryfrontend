@@ -15,10 +15,10 @@ import MainFooter from "@/components/common/Footer";
 export default {
   name: "App",
   metaInfo: {
-    title: "Rotary Club of Kathmandu-Midtown",
+    title: "Rotary Club of Kathmandu-Mid-Town",
     meta: [
       { charset: "utf-8" },
-      { name: "description", content: "Rotary Club of Kathmandu Midtown" },
+      { name: "description", content: "Rotary Club of Kathmandu Mid-Town" },
       { name: "viewport", content: "width=device-width, initial-scale=1" }
     ]
   },

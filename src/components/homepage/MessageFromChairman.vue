@@ -2,7 +2,7 @@
   <div class="container my-5">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="text-center">MESSAGES FOR 2019-2020</h1>
+        <h1 class="text-center">MESSAGES FOR 2020-2021</h1>
         <div class="container">
           <div class="message-name row mt-3 text-center">
             <!-- <h2

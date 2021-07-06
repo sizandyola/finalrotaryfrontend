@@ -58,18 +58,18 @@ export default {
           name: "Govinda B. Chipalu",
           imageUrl: "chipalu.jpg"
         },
-        {
-          name: "Komal B. Chitracar",
-          imageUrl: "chitracar.jpg"
-        },
+        // {
+        //   name: "Komal B. Chitracar",
+        //   imageUrl: "chitracar.jpg"
+        // },
         {
           name: "Lisa Choegyal",
           imageUrl: "choegyal.jpg"
         },
-        {
-          name: "Walter Diller",
-          imageUrl: "diller.jpg"
-        },
+        // {
+        //   name: "Walter Diller",
+        //   imageUrl: "diller.jpg"
+        // },
         {
           name: "Sangita Einhouse Shrestha",
           imageUrl: "einhaus.jpg"
@@ -138,22 +138,26 @@ export default {
           name: "Milan Maharjan",
           imageUrl: "milan-maharjan.jpg"
         },
-        {
-          name: "Susen A. Mole",
-          imageUrl: "mole.jpg"
-        },
-        {
-          name: "Dale Mole",
-          imageUrl: "mole-dale.jpg"
-        },
+        // {
+        //   name: "Susen A. Mole",
+        //   imageUrl: "mole.jpg"
+        // },
+        // {
+        //   name: "Dale Mole",
+        //   imageUrl: "mole-dale.jpg"
+        // },
         {
           name: "Bhai Raja Panday",
           imageUrl: "bhairaja.jpg"
         },
-        {
-          name: "Maria-Teresa Mesquita Pessoa",
-          imageUrl: "pessoce.jpg"
+          {
+          name: "Bijay Bahadur Shrestha",
+          imageUrl: "bijayabahadur.jpg"
         },
+        // {
+        //   name: "Maria-Teresa Mesquita Pessoa",
+        //   imageUrl: "pessoce.jpg"
+        // },
         {
           name: "Pramod Chandra Poudel",
           imageUrl: "poudel-pramod.jpg"
@@ -202,6 +206,10 @@ export default {
           name: "Jyotsna Shrestha",
           imageUrl: "shrestha-jyotsna.jpg"
         },
+         {
+          name: "Karan Vaidya",
+          imageUrl: "karan.jpg"
+        },
         {
           name: "Ajaya R. Sthapit",
           imageUrl: "sthapit.jpg"
@@ -246,15 +254,19 @@ export default {
            name: "Ranjit Acharya",
           imageUrl: "ranjit-acharya.jpg"
         },
+        {
+           name: "Rohit Man Pradhan",
+          imageUrl: "rohit-man-pradhan.jpg"
+        },
          {
            name: "Sangeeta Rana Thapa",
           imageUrl: "sangeeta-rana-thapa.jpg"
         },
-         {
-           name: "Kulman Ghising",
-          imageUrl: "kulman-ghising.jpg",
-          title: "(Honorary Member)"
-        }
+        //  {
+        //    name: "Kulman Ghising",
+        //   imageUrl: "kulman-ghising.jpg",
+        //   title: "(Honorary Member)"
+        // }
       ],
       sorting: -1
     };
