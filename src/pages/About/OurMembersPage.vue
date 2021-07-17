@@ -244,7 +244,7 @@ export default {
         },
         {
           name: "Rupinder Kaur",
-          imageUrl: "rupinder.jpg"
+          imageUrl: "rupy.jpg"
         },
         {
           name: "Abhishek Raj",
@@ -324,6 +324,7 @@ export default {
 }
 hr {
   /* background-color: #025198; */
+  /*  */
   background-color: #faa72f;
 }
 </style>

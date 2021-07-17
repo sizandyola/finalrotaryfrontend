@@ -16,7 +16,7 @@
               <div class="blog-img">
                 <img :src="item.acf.image.url" alt />
               </div>
-              <div class="blog-content">
+              <div class="blog-content px-3">
                 <div class="blog-title">
                   <div class="title">
                     <h2 v-html="item.title.rendered"></h2>
@@ -69,6 +69,7 @@ export default {
 <style scoped>
 .container-blog {
   /* background-color:#FAA72F;  */
+  background: #025198;
 }
 /* .container-blog-me{
   background-color: #FAA72F; 
@@ -108,7 +109,8 @@ a {
   display: inline-block;
 }
 .section-title h1 {
-  color: #025198;
+  /* color: #025198; */
+  color: #ffd700;
 }
 /* .section-title h4::before {
   position: absolute;
@@ -135,11 +137,13 @@ a {
   position: relative;
   height: 250px;
   overflow: hidden;
+  width: 100%;
 }
 
 .blog-img img {
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .post-category a {
   display: inline-block;
@@ -162,6 +166,7 @@ a {
 }
 .single-blog {
   /* border: 1px solid #eee; */
+  background: #fff;
 }
 .blog-title h4 {
   font-size: 1.3em;
@@ -228,7 +233,8 @@ a.box_btn:hover::before {
 }
 .read-more-view {
   /* border-bottom: 1px solid #fff; */
-  color: var(--rotary-gold);
+  /* color: var(--rotary-gold); */
+  color: #ffd700;
   float: right;
   margin-top: -25px;
   /* line-height: -152px; */

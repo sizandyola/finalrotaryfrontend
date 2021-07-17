@@ -48,6 +48,12 @@ class APIService {
     getFlags(){
         return axios.get(baseUrl + "flags")
     }
+    getMessagesFrom(){
+        return axios.get(baseUrl + "messages_from")
+    }
+    getMessagesFromSlug(slug){
+        return axios.get(baseUrl + "messages_from?slug="+slug)
+    }
 }
 
 export default APIService

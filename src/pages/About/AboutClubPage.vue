@@ -127,6 +127,50 @@ Major Donor <br>
       </div>
     </div>
 
+    <hr class="my-5" />
+
+    <div class="who-are-we">
+      <h1>Who Are We?</h1>
+<p>
+      -For the past 15 years or so we have always been approx 50 members. These members come from leading business establishments, and the tourism sector in Kathmandu. Professionals are 20% MDs or PhDs and one retired General. A good number 5-10 % of members are of the international/diplomatic/ex-pat community; and, on average, recently 20-25% are women. 
+</p>
+<p>
+- History of Rotary in Nepal started in 1959 with the first RC of Kathmandu. In 1985 the next club was added. We are the fifth club in to be chartered in Nepal, in what was then RID 3290. 
+</p>
+<p>
+-When we were chartered we were the first club in the region to be a breakfast club</p>
+<p>
+-Until very recently, we were the only club to always conduct meetings in English – and because we are located in Kathmandu, we have always attracted members from the international community: ambassadors, and other staff who work at embassies and foreigners who work in international agencies and the like. At present, 5 of our members are Honorary Consuls. (Spain, Canada, Latvia, Belgium and New Zealand).</p>
+<p>
+-We are a 100% Paul Harris Fellow Club</p>
+<p>
+- Our Club is proud to have among its members, the first female Rotary Club president in Nepal, a Past District Governor, four Major Donors, and, the first Arch Klumph Society Member in Nepal – Now Arch C. Klumph Society Chair Circle Member – second level</p>
+<p>-We have sponsored 4 Rotary Community Corps (RCC)</p> 
+<p>-We have sponsored 3 Interact Clubs  </p> 
+<p>-We have sponsored 2 Rotary Clubs (Rotary Club of New Road City and Rotary Club of Pashupati)</p> 
+<p>-We have sponsored a Rotaract Club (The Rotaract Club of Kathmandu Mid-Town (chartered 1998). From this Rotract Club 2 Rotracts have become District Rotract Representatives and one is now the Charter President of the Rotary Club of Kathmandu Height</p> 
+
+
+
+
+
+
+
+<p>
+
+ (Interact Club of Kathmandu Mid-Town, Kirtipur,  Kathmandu Mid Town, Pagna and Kathmandu Mid-Town, Thaiba (This was the first Interact club in Nepal, it was chartered on 11 June 1998)
+ </p>
+<p>1991 – Ramkot Village, Bagmati Zone </p>
+<p>2008 – Lele Village in Lele VDC, Laitpur District </p>
+<p>2013 – Sooryapal Village Improvement Committee in Sooryapal VDC, Lamjung District </p>
+<p>2013 – Samaj Sudhar Kendra Dhuwakot in Dhuwakot VDC, Gorkha District </p>
+
+
+
+
+
+    </div>
+
     <!-- <h4
       class="text-left mt-5 mb-4"
     >Our Club has many outstanding members but a few deserve special mention.</h4>

@@ -17,7 +17,6 @@ Vue.use(VueToastr2)
 
 
 
-
 Vue.use(VueLazyload)
 
 // or with options
@@ -42,6 +41,12 @@ Vue.addScript = function (src) {
   s.setAttribute("src", src);
   document.body.appendChild(s);
 }
+
+import lineClamp from 'vue-line-clamp'
+ 
+Vue.use(lineClamp, {
+  // plugin options
+})
 
 new Vue({
   router,

@@ -252,6 +252,13 @@ export default {
           theme: "rotary-connects.jpg",
           photo: "neeva.jpg",
           ri: "Mark Daniel Maloney, of the Rotary Club of Decatur, Alabama, USA"
+        },
+         {
+          name: "Lt. Gen. KNS Thapa (Ret’d.)",
+          date: "(2020-2021)",
+          theme: "roo.png",
+          photo: "kns.jpg",
+          ri: "Holger Knaack, Rotary Club of Herzogtum Lauenburg-Mölln, Germany"
         }
       ]
     };

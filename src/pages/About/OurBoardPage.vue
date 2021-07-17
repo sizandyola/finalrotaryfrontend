@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <h1 class="text-left">Board Members 2020-2021</h1>
+      <h1 class="text-left">Board Members 2021-2022</h1>
       <hr class="my-4" />
       <!-- <div class="row">
         <div class="board-members col-md-6">
@@ -31,14 +31,14 @@
           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" v-for="item in members" :key="item">
             <div class="custom-card">
               <div class="row my-3">
-                <div class="col-md-6 col-sm-6 col-6">
+                <div class="col-md-6 col-sm-6 col-6" style="padding-right:0">
                   <div class="cards-image">
                     <img v-lazy="imageBase+item.imageUrl" class="img-fluid" />
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-6">
                   <div class="custom-card-text">
-                    <h2 class="title">{{item.name}}</h2>
+                    <h2 class="title" :class="item.name=='Neeva Mathema Pradhan'?'smaller-title':''">{{item.name}}</h2>
                     <span class="post">{{item.title}}</span>
                   </div>
                 </div>
@@ -60,81 +60,71 @@ export default {
       imageBase: "/images/about/board/",
       members: [
           {
-          name: "Lt. Gen. KNS Thapa (Ret’d.)",
-          imageUrl: `khrishna-thapa.jpg`,
-          title: "President"
-        },
-          {
           name: "Promod Paudel",
           imageUrl: `promod-poudel.jpg`,
-          title: "President Elect"
-        },
-        {
-          name: "Neeva Mathema Pradhan",
-          imageUrl: `neeva.jpg`,
-          title: "Immediate Past President"
-        },
-       
-          {
-          name: "Rabindra Shrestha",
-          imageUrl: `rabindra-shrestha.jpg`,
-          title: "Vice Presidient"
-        },
-          {
-          name: "Dr. Nirmal Rijal",
-          imageUrl: `nirmal-rijal.jpg`,
-          title: "Secretary"
-        },
-         {
-          name: "Ramraj Shrestha",
-          imageUrl: `ramraj-shrestha.jpg`,
-          title: "Joint Secretary"
-        },
-       {
-          name: "Ajay Staphit",
-          imageUrl: `ajay.jpg`,
-          title: "Treasurer"
-        },
-       
-        {
-          name: "Bhairaja Panday",
-          imageUrl: `bhairaja.jpg`,
-          title: "Fund Raising Chair & Club Admin Chair"
-        },
-         {
-          name: "Dr. Chadra Lekha Tuladhar",
-          imageUrl: `clekha.jpg`,
-          title: "Youths Service Chair"
-        },
-           {
-          name: "Mani Dhoj Joshi",
-          imageUrl: `mani.jpg`,
-          title: "Membership Chair"
-        },
-          {
-          name: "William Ma",
-          imageUrl: `william.jpg`,
-          title: "Public Relations Chair"
-        },
-         {
-          name: "Paras SJB Rana",
-          imageUrl: `paras.jpg`,
-          title: "Community Projects Chair"
-        },
-        //  {
-        //   name: "Govinda Chipalu",
-        //   imageUrl: `govinda-chipalu.jpg`,
-        //   title: "Club Administration Chair"
-        // },
-         {
-          name: "Rabi Karmacharya",
-          imageUrl: `rabi-karmacharya.jpg`,
-          title: "The Rotary Foundation Chair"
+          title: "President"
         },
          {
           name: "Shyam Thapaliya",
           imageUrl: `rabindra.jpg`,
-          title: "Sergeant-at-Arms"
+          title: "Vice President"
+        },
+          {
+          name: "Lt. Gen. KNS Thapa (Ret’d.)",
+          imageUrl: `khrishna-thapa.jpg`,
+          title: "Immediate Past President"
+        },
+          {
+          name: "Dr. Nirmal Rijal",
+          imageUrl: `nirmal-rijal.jpg`,
+          title: "President Elect"
+        },
+           {
+          name: "Abhisekh Raj",
+          imageUrl: `abhishek.jpg`,
+          title: "Secretary"
+        },
+           {
+          name: "Rachana Thapa",
+          imageUrl: `rachana thapa.jpg`,
+          title: "Treasurer"
+        },
+          {
+          name: "Sangeeta Thapa",
+          imageUrl: `sangeeta-rana-thapa.jpg`,
+          title: "Membership Chair"
+        },
+         {
+          name: "Rupy Singh",
+          imageUrl: `rupy.jpg`,
+          title: "Club Administrative Chair"
+        },
+         {
+          name: "Paras SJB Rana",
+          imageUrl: `paras.jpg`,
+          title: "Community Project Chair"
+        },
+         {
+          name: "TRF Chair",
+          imageUrl: `gopal.jpg`,
+          title: "Gopal Kakshapati"
+        },
+        {
+          name: "Neeva Mathema Pradhan",
+          imageUrl: `neeva.jpg`,
+          title: "Public Image & Vocational/ Community Dev. Chair"
+        },
+       
+        
+         {
+          name: "Dr. Chadra Lekha Tuladhar",
+          imageUrl: `clekha.jpg`,
+          title: "Youths Chair"
+        },
+        {
+          name: "Jo Logghe Sherpa",
+          imageUrl: `logghe.jpg`,
+          title: "Sergeant at Arms"
         },
        
       ]
@@ -176,7 +166,7 @@ export default {
 }
 
 .custom-card-text {
-  padding: 15px 10px;
+  padding: 15px 10px 15px 5px;
 
   text-transform: capitalize;
 }
@@ -188,5 +178,9 @@ export default {
 }
 hr{
   background-color: #FAA72F;
+}
+
+.smaller-title{
+  font-size: 16px !important;
 }
 </style>

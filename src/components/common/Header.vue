@@ -42,7 +42,7 @@
 
             <div class="col-3 text-right">
               <router-link to="/">
-                <img src="/images/rotary-opens-oppurtunities.png" alt="logo" class="logo" />
+                <img src="/images/serve-to-change-lives.jpg" alt="logo" class="logo" style="height:80px"/>
               </router-link>
             </div>
           </div>
@@ -84,10 +84,10 @@
           <i class="fas fa-bars bars mr-3" @click="sidebarToggle"></i>
           <div class="d-flex justify-content-between" style="width:100%">
             <router-link to="/">
-              <img src="./../../../public/images/logo_top.png" alt="logo" class="logo" />
+              <img src="/images/logo_top.png" alt="logo" class="logo" />
             </router-link>
             <router-link to="/">
-              <img src="./../../../public/images/rotary-opens-oppurtunities.png" alt="logo" class="logo" />
+              <img src="/images/serve-to-change-lives.jpg" alt="logo" class="logo" />
             </router-link>
           </div>
         </div>

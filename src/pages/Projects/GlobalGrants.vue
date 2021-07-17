@@ -42,7 +42,7 @@ We are happy to acknowledge our partners: The Rotary Club of Salt Lake City, RID
       <div class="custom-card">
         <div class="row align-items-center">
           <div class="col-md-8">
-            <h4 class="p-3">Ongoing Global Grant: Education Support in Sindhupalchok and Nuwakot</h4>
+            <h4 class="p-3">Ongoing Global Grant: Early Years Education Support Project in Nuwakot and Sindulpalchowk</h4>
 
             <p class="text-justify p-3">
               <img

@@ -74,15 +74,15 @@ export default {
 
 <style scoped>
 .section {
-  /* background: #3a5879; */
-  background: #025198;
+  background-color:#FAA72F; 
+  
 }
 h1 {
-  /* color: #fff; */
-  color: #ffd700;
+  color: #fff;
+  /* color: #ffd700; */
 }
 hr {
-  border-color: #ffd700;
+  border-color: #fff;
 }
 .pad0 {
   padding: 0px;

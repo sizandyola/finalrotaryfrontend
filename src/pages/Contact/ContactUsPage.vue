@@ -99,13 +99,16 @@
                 class="google-map"
               ></iframe>-->
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2034454333434!2d85.3141391154155!3d27.711004131937333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19017fa3b0cf%3A0xd988bc5b5c01f9df!2sHotel%20Del&#39;%20Annapurna%20Swimming%20Pool!5e0!3m2!1sen!2snp!4v1573654570153!5m2!1sen!2snp"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.046590592983!2d85.31102721453851!3d27.71584773172624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190b72e9720f%3A0xc74f8a6f4edae238!2sAloft%20Kathmandu%20Thamel!5e0!3m2!1sen!2snp!4v1625983823722!5m2!1sen!2snp"
                 height="400"
                 frameborder="0"
                 style="border:0;"
                 allowfullscreen
                 class="google-map"
               ></iframe>
+
+
+           
             </div>
           </div>
         </div>

@@ -1,17 +1,12 @@
 <template>
-  <div class="container my-5">
+<div class="message-wrapper">
+  <div class="container py-5">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="text-center">MESSAGES FOR 2020-2021</h1>
-        <div class="container">
+        <h1 class="text-center text-white">MESSAGES FOR 2021-2022</h1>
+        <!-- <div class="container">
           <div class="message-name row mt-3 text-center">
-            <!-- <h2
-              class="btn-messages p-2 mr-3 mt-2 text-center"
-              v-for="(item,index) in message"
-              :key="item"
-              :class="currentMessage==index?'active':''"
-              @click="clickEv(index)"
-            >{{item}}</h2>-->
+           
             <a href="#rc-midtown">
               <h2 class="btn-messages p-2 mr-3 mt-2 text-center">
                 Kathmandu Mid-town President
@@ -33,11 +28,38 @@
               </h2>
             </a>
           </div>
-        </div>
+        </div> -->
         <hr class="rc-midtown-hr" />
 
-        <p id="rc-midtown"></p>
-        <div class="py-4">
+        <div class="messages">
+           <div class="row">
+          <div class="col-md-4" v-for="msg in messages" :key="msg.id">
+            <div class="card">
+            <div class="message-image card-image">
+              <img :src="msg.acf.image" class="" />
+            </div>
+            <div class="card-body">
+            <div class="message-name">
+              <h2>
+                {{msg.title.rendered}}
+              </h2>
+              
+            </div>
+            <div class="message-title">
+               {{msg.acf.designation}}
+            </div>
+            <div class="message" v-html="msg.acf.message" v-line-clamp:20="4">
+              
+            </div>
+
+            <router-link style="text-decoration: underline;font-weight:bold;cursor:pointer" class="mt-4" :to="'/message/'+msg.slug" v-if="msg.acf.message">Read More</router-link>
+          </div>
+          </div>
+        </div>
+        </div>
+        </div>
+       
+        <!-- <div class="py-4">
         <div class="row section ">
           <div class="col-md-4 text-center">
             <img src="/images/kns-thapa.jpg" class="img-fluid" />
@@ -81,11 +103,11 @@
           better tomorrow. Together we can do it. So let's all march forward
           together. I will be with you in-step, all the time.
         </p>
-        </div>
+        </div> -->
      
-        <hr />
+        
 
-        <p id="district"></p>
+        <!-- <p id="district"></p>
         <div class="row section py-4">
           <div class="col-md-4 text-center">
             <img src="/images/rajiv-pokhrel.jpg" class="img-fluid" />
@@ -211,10 +233,12 @@
               Press Release 2 June ,2020
             </p>
           </div>
-        </div>
+        </div> -->
         <hr />
       </div>
     </div>
+  </div>
+ 
   </div>
 </template>
 
@@ -228,6 +252,8 @@ export default {
         "District Governor",
         "Rotary International President",
       ],
+      messages: [],
+      selected: null
     };
   },
 
@@ -235,7 +261,16 @@ export default {
     clickEv(index) {
       this.currentMessage = index;
     },
+   
   },
+  mounted(){
+    this.$API.getMessagesFrom().then(data=>{
+      console.log(data.data);
+      this.messages = data.data;
+    }).catch(error=>{
+      console.log(error);
+    })
+  }
 };
 </script>
 
@@ -267,7 +302,7 @@ hr {
 
 .btn-messages:hover {
   text-decoration: none;
-  color: #fff !important;
+  
   /* background: var(--primary-blue); */
   background: #025198;
 }
@@ -283,6 +318,41 @@ hr {
 
 a {
   text-decoration: none;
+}
+
+.message-wrapper{
+background: #d91a5d;
+} 
+
+.messages{
+  
+}
+.message{
+  
+  word-break: break-word !important;
+}
+.message-image {
+  /* width:250px; */
+  height: 350px;
+}
+.message-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.message-name{
+  margin-top: 15px;
+  
+}
+.message-title{
+     font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-body{
+      min-height: 242px;
+
 }
 
 @media (max-width: 992px) {

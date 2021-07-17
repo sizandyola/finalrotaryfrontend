@@ -1,7 +1,17 @@
 <template>
   <div class="container">
-    <h1 class="text-left">Sponsored Clubs</h1>
-    <hr class="my-4" />
+    <h1 class="text-left mb-3">Sister Club</h1>
+    <div class="d-flex">
+      <div class="">
+        <img src="/images/chennai.png" class="img-fluid"  style="width: 100px" alt="">
+      </div>
+      <div class="d-flex align-items-center" style="width: 400px;padding-left: 15px;">
+          <p style="font-weight:500;">In 2020-2021 we were happy to welcome the Rotary Club Of Chennai ECR as sister club</p>
+      </div>
+    </div>
+  
+    <h1 class="text-left mt-5">Sponsored Clubs</h1>
+    <!-- <hr class="my-4" /> -->
     <h4 class="mt-3">Sponsored Rotary Clubs</h4>
     <ul>
       <li>Rotary Club of New Road City</li>

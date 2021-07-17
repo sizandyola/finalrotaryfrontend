@@ -4,9 +4,12 @@
     <UpcommingEvents />
     <MessageFromChairman />
 
+
+
+       <Blog2 />
     <RecentProjects />
 
-    <Blog2 />
+ 
   </div>
 </template>
 

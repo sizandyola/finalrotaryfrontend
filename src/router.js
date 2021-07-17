@@ -10,7 +10,8 @@ import OurBoardPage from './pages/About/OurBoardPage.vue'
 import OurMembersPage from './pages/About/OurMembersPage.vue'
 import SponsoredClubsPage from './pages/About/SponsoredClubsPage.vue'
 import MeetingInfo from "./pages/About/MeetingInfo.vue"
-import CharteredMembers from "./pages/About/OurCharterMember.vue"
+import CharteredMembers from "./pages/About/OurCharterMember.vue";
+import MessageDetails from "./pages/MessageDetails.vue"
 
 //archives section
 import Archives from "./pages/Archives/Archives.vue"
@@ -23,6 +24,7 @@ import OurFriends from "./pages/Archives/OurFriends.vue"
 import Calendar from "./pages/Calendar/Calender.vue"
 import CalendarPage from './pages/Calendar/CalendarPage.vue'
 import WeeklySpeakerCalendar from './pages/Calendar/WeeklySpeakerCalendar.vue'
+import WeelyCalendar2022 from './pages/Calendar/WeelyCalendar2022.vue'
 
 
 //contact section
@@ -93,6 +95,12 @@ export default new Router({
       hide: true
     },
     {
+      path: "/message/:name",
+      name: "Message Details",
+      component: MessageDetails,
+      hide: true
+    },
+    {
       path: "/news-updates/:id",
       name: "news and updates",
       component: NewsAndUpdates,
@@ -130,8 +138,14 @@ export default new Router({
           component: CharteredMembers
         },
         {
-          path: "sponsored-clubs",
-          name: "sponsored clubs",
+          path: "brief-club-history",
+          name: "brief club history",
+          component: BriefHistoryPage
+
+        },
+        {
+          path: "sister-club-sponsored-clubs",
+          name: "sister club and sponsored clubs",
           component: SponsoredClubsPage
 
         },
@@ -250,12 +264,7 @@ export default new Router({
           component: PastPresidentsPage
 
         },
-        {
-          path: "brief-club-history",
-          name: "brief club history",
-          component: BriefHistoryPage
-
-        },
+     
         {
           path: "rotary-years",
           name: "rotary years",
@@ -299,12 +308,22 @@ export default new Router({
 
         // },
 
-        {
-          path: "weekly-speaker-calendar",
-          name: "Weekly Speaker Calendar",
-          component: WeeklySpeakerCalendar
+        // {
+        //   path: "weekly-speaker-calendar",
+        //   name: "Weekly Speaker Calendar",
+        //   component: WeeklySpeakerCalendar
 
+        // },
+        {
+          path: "weekly-calendar-2021-2022",
+          name: "2021-2022",
+          component: WeelyCalendar2022
         },
+        {
+          path: "weekly-calendar-2020-2021",
+          name: "2020-2021",
+          component:  WeeklySpeakerCalendar
+        }
 
       ]
     },
