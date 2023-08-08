@@ -2,6 +2,15 @@ const baseUrl = "https://rotarymidtown.org.np/admin/wp-json/wp/v2/";
 import axios from "axios";
 
 class APIService {
+    getBoardMembers(){
+        return axios.get(process.env.VUE_APP_BASE_URL + '/board-members?populate=*&sort=rank:asc')
+    }
+
+    getSiteDetails(){
+        return axios.get(process.env.VUE_APP_BASE_URL + '/site-detail?populate=*&sort=rank:asc')
+    }
+
+
     getEvents() {
         return axios.get(baseUrl + 'events?per_page=100');
     }

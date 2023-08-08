@@ -31,6 +31,11 @@ export default {
     scrollToTop() {
       window.scrollTo(0, 0);
     }
+  },
+  mounted(){
+    this.$API.getSiteDetails().then(data=>{
+      this.$store.commit('setSiteDetails', data.data.data);
+    })
   }
 };
 </script>

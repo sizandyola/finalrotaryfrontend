@@ -6,7 +6,7 @@
 
         <p id="snakebite"></p>
        <div class="custom-card container">
-        <h4 class="p-3">Recently Approved: Snakebite Prevention and Awareness Project</h4>
+        <h4 class="p-3">Ongoing Global Grant: Snakebite Prevention and Awareness Project</h4>
          
         <div class="row align-items-center">
           <div class="col-md-4 text-center">

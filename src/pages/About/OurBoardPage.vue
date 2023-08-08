@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <h1 class="text-left">Board Members 2021-2022</h1>
+      <h1 class="text-left">Board Members  {{$store.state.site_details.current_year }}</h1>
       <hr class="my-4" />
       <!-- <div class="row">
         <div class="board-members col-md-6">
@@ -32,8 +32,8 @@
             <div class="custom-card">
               <div class="row my-3">
                 <div class="col-md-6 col-sm-6 col-6" style="padding-right:0">
-                  <div class="cards-image">
-                    <img v-lazy="imageBase+item.imageUrl" class="img-fluid" />
+                  <div class="cards-image" v-if="item.image">
+                    <img v-lazy="imageBase+item.image.url" class="img-fluid" />
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-6">
@@ -57,75 +57,94 @@
 export default {
   data() {
     return {
-      imageBase: "/images/about/board/",
+      imageBase: process.env.VUE_APP_DOMAIN,
       members: [
           {
-          name: "Promod Paudel",
-          imageUrl: `promod-poudel.jpg`,
+          name: "Lista Choegyal",
+          imageUrl: `choegyal.jpg`,
           title: "President"
         },
          {
-          name: "Shyam Thapaliya",
-          imageUrl: `rabindra.jpg`,
+          name: "Bhim Udas",
+          imageUrl: ``,
           title: "Vice President"
-        },
-          {
-          name: "Lt. Gen. KNS Thapa (Ret’d.)",
-          imageUrl: `khrishna-thapa.jpg`,
-          title: "Immediate Past President"
         },
           {
           name: "Dr. Nirmal Rijal",
           imageUrl: `nirmal-rijal.jpg`,
-          title: "President Elect"
-        },
-           {
-          name: "Abhisekh Raj",
-          imageUrl: `abhishek.jpg`,
-          title: "Secretary"
-        },
-           {
-          name: "Rachana Thapa",
-          imageUrl: `rachana thapa.jpg`,
-          title: "Treasurer"
-        },
-          {
-          name: "Sangeeta Thapa",
-          imageUrl: `sangeeta-rana-thapa.jpg`,
-          title: "Membership Chair"
-        },
-         {
-          name: "Rupy Singh",
-          imageUrl: `rupy.jpg`,
-          title: "Club Administrative Chair"
-        },
-         {
-          name: "Paras SJB Rana",
-          imageUrl: `paras.jpg`,
-          title: "Community Project Chair"
-        },
-         {
-          name: "TRF Chair",
-          imageUrl: `gopal.jpg`,
-          title: "Gopal Kakshapati"
+          title: "Immediate Past President"
         },
         {
-          name: "Neeva Mathema Pradhan",
-          imageUrl: `neeva.jpg`,
-          title: "Public Image & Vocational/ Community Dev. Chair"
-        },
-       
-        
-         {
-          name: "Dr. Chadra Lekha Tuladhar",
-          imageUrl: `clekha.jpg`,
-          title: "Youths Chair"
+          name: "Rupy Singh",
+          imageUrl: `rupy.jpg`,
+          title: "Preseident Elect"
         },
         {
           name: "Jo Logghe Sherpa",
           imageUrl: `logghe.jpg`,
-          title: "Sergeant at Arms"
+          title: "Treasurer"
         },
+        {
+          name: "Kalpana Prajuli",
+          imageUrl: `kalpana.jpg`,
+          title: "Secretary"
+        },
+        {
+          name: "Amy Bunnell",
+          imageUrl: `amy.jpg`,
+          title: "Secretary"
+        },
+        {
+          name: "Isabella Khadka",
+          imageUrl: `isa.jpg`,
+          title: "Membership Chair"
+        },
+        {
+          name: "Paras SJB Rana",
+          imageUrl: `paras.jpg`,
+          title: "Projects Chair"
+        },
+        {
+          name: "Sangeeta Thapa",
+          imageUrl: `sangeeta-rana-thapa.jpg`,
+          title: "Club Admin"
+        },
+        
+        {
+          name: "Dr. Chadra Lekha Tuladhar",
+          imageUrl: `clekha.jpg`,
+          title: "Youth Services"
+        },
+        {
+          name: "TRF Chair",
+          imageUrl: `gopal.jpg`,
+          title: "Gopal Kakshapati"
+        },
+        //    {
+        //   name: "Abhisekh Raj",
+        //   imageUrl: `abhishek.jpg`,
+        //   title: "Secretary"
+        // },
+        //    {
+        //   name: "Rachana Thapa",
+        //   imageUrl: `rachana thapa.jpg`,
+        //   title: "Treasurer"
+        // },
+       
+       
+        //  {
+        //   name: "Paras SJB Rana",
+        //   imageUrl: `paras.jpg`,
+        //   title: "Community Project Chair"
+        // },
+       
+        // {
+        //   name: "Neeva Mathema Pradhan",
+        //   imageUrl: `neeva.jpg`,
+        //   title: "Public Image & Vocational/ Community Dev. Chair"
+        // },
+       
+     
        
       ]
     };
@@ -135,6 +154,13 @@ export default {
       var url = this.imageBase + img;
       return require(`${url}`);
     }
+  },
+  mounted(){
+    console.log("VUE_APP_BASE_URL",process.env.VUE_APP_BASE_URL)
+    this.$API.getBoardMembers().then(data=>{
+      console.log("data", data.data.data)
+      this.members = data.data.data
+    })
   }
 };
 </script>

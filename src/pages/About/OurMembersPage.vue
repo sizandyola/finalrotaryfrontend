@@ -42,6 +42,18 @@ export default {
     return {
       imageBase: "/images/about/members/",
       members: [
+      {
+          name: "Amy Bunnell",
+          imageUrl: "amy.jpg"
+        },
+        {
+          name: "Kalpana Parajuli",
+          imageUrl: "kalpana.jpg"
+        },
+        {
+          name: "Dr. Neil Pande",
+          imageUrl: "neil.jpg"
+        },
         {
           name: "Buddha Basnyat",
           imageUrl: "basnyat.jpg"
@@ -78,10 +90,10 @@ export default {
           name: "Basu Dev Gautam",
           imageUrl: "gautam.jpg"
         },
-        {
-          name: "Kul Chandra Gautam",
-          imageUrl: "gautamkul.jpg"
-        },
+        // {
+        //   name: "Kul Chandra Gautam",
+        //   imageUrl: "gautamkul.jpg"
+        // },
         {
           name: "Chandra Kumar Golchha",
           imageUrl: "golchha.jpg"
@@ -114,10 +126,10 @@ export default {
           name: "Gopal S. Lal Kakshapati",
           imageUrl: "kakshapati.jpg"
         },
-        {
-          name: "Rabi Karmacharya",
-          imageUrl: "karmacharya.jpg"
-        },
+        // {
+        //   name: "Rabi Karmacharya",
+        //   imageUrl: "karmacharya.jpg"
+        // },
         {
           name: "Isabella C. Bassignana Khadka",
           imageUrl: "isa.jpg"
@@ -146,10 +158,7 @@ export default {
         //   name: "Dale Mole",
         //   imageUrl: "mole-dale.jpg"
         // },
-        {
-          name: "Bhai Raja Panday",
-          imageUrl: "bhairaja.jpg"
-        },
+    
           {
           name: "Bijay Bahadur Shrestha",
           imageUrl: "bijayabahadur.jpg"
@@ -174,10 +183,10 @@ export default {
           name: "Paras S.J.B. Rana",
           imageUrl: "rana-paras.jpg"
         },
-        {
-          name: "Shankar P. Sharma",
-          imageUrl: "sharma-shankar.jpg"
-        },
+        // {
+        //   name: "Shankar P. Sharma",
+        //   imageUrl: "sharma-shankar.jpg"
+        // },
         {
           name: "Arun Man Sherchan",
           imageUrl: "sherchan.jpg"
@@ -243,7 +252,7 @@ export default {
           imageUrl: "nirmal.jpg"
         },
         {
-          name: "Rupinder Kaur",
+          name: "RUPY SINGH (RUPINDER KAUR)",
           imageUrl: "rupy.jpg"
         },
         {
@@ -262,11 +271,20 @@ export default {
            name: "Sangeeta Rana Thapa",
           imageUrl: "sangeeta-rana-thapa.jpg"
         },
-        //  {
-        //    name: "Kulman Ghising",
-        //   imageUrl: "kulman-ghising.jpg",
-        //   title: "(Honorary Member)"
-        // }
+        {
+           name: "Peter Bodde",
+          imageUrl: "peter.jpg"
+        },
+        {
+           name: "Purusottam Mudbhary",
+          imageUrl: "purusottam.jpg"
+        },
+        
+         {
+           name: "Kulman Ghising",
+          imageUrl: "kulman-ghising.jpg",
+          title: "(Honorary Member)"
+        }
       ],
       sorting: -1
     };
