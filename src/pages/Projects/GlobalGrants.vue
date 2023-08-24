@@ -17,7 +17,7 @@
               <i>"A Nepal where no one dies from snakebite"</i>
             </h5>
             <p>
-              Snakebite is one of the most neglected public health issues in rural Nepal.  Estimates show that every year at least 40,000 people are bitten (due to lack of awareness) and some 1000 die (from inadequate medical care). Not only do rural communities lack awareness on how to prevent and treat snakebite, but they also lack a political voice as evinced by the fact that snakebite has been severely neglected by both international and national policy-makers and donors, the pharmaceutical industry, the media, and academia. To date, there has not been any concerted, coordinated effort to eradicate this problem in Nepal. 
+              Snakebite is one of the most neglected public health issues in rural Nepal.  Estimates show that every year at least 40,000 people are bitten (due to lack of awareness) and some 3000 die (from inadequate medical care). Not only do rural communities lack awareness on how to prevent and treat snakebite, but they also lack a political voice as evinced by the fact that snakebite has been severely neglected by both international and national policy-makers and donors, the pharmaceutical industry, the media, and academia. To date, there has not been any concerted, coordinated effort to eradicate this problem in Nepal. 
               <br>
               See more information at  <a
                 href="http://snakebitenepal.org/"

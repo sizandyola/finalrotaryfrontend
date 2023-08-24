@@ -39,7 +39,6 @@ export default {
   },
   mounted() {
     this.$API.getVideos().then(data => {
-      console.log(data.data);
       this.data = data.data;
       this.isLoaded = true;
     });

@@ -6,8 +6,20 @@ class APIService {
         return axios.get(process.env.VUE_APP_BASE_URL + '/board-members?populate=*&sort=rank:asc')
     }
 
+    getMembers(){
+        return axios.get(process.env.VUE_APP_BASE_URL + '/members?populate=*&pagination[page]=1&pagination[pageSize]=100')
+    }
+
     getSiteDetails(){
         return axios.get(process.env.VUE_APP_BASE_URL + '/site-detail?populate=*&sort=rank:asc')
+    }
+
+    getMessages(){
+        return axios.get(process.env.VUE_APP_BASE_URL + '/messages?populate=*&sort=rank:asc')
+    }
+
+    getMessagesFromId(id){
+        return axios.get(process.env.VUE_APP_BASE_URL + "/messages/"+id+'?populate=*')
     }
 
 

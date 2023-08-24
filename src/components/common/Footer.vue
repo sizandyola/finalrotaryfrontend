@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="logo-part mb-5">
-            <img src="/images/logo_top.png" class="w-50 logo-footer img-fluid mb-3" />
+            <img :src="domain + $store.state.site_details.site_motto_logo.url" class="w-25 logo-footer img-fluid mb-3" />
             <p>Rotary Club Kathmandu Mid-Town</p>
             <p>
               <br />District 3292, Club 26776
@@ -15,18 +15,8 @@
         
         <div class="col-md-5 px-4">
           <h6>VISIT OUR CLUB</h6>
-          <p>
-            Until further notice our weekly meetings will be held by Zoom. See details in the calendar on our home page. If you are interested in joining the meeting, please email us at    <router-link to="/contact-us/contact-information">
-              <a class="contact-us">CONTACT US </a>
-            </router-link>and we will send you the link.
-          </p>
-          <!-- <p>
-            <br />The Rotary Club of Kathmandu Mid-Town meets every Friday morning at 7:30 AM at the Hotel de I-Annapurna on Durbar Marg in Kathmandu. Visiting Rotarians are most welcomed.
-            <br />As a courtesy, we request that visiting Rotarians and friends inform us first at -
-            <router-link to="/contact-us/contact-information">
-              <a class="contact-us">CONTACT US</a>
-            </router-link>
-          </p> -->
+          <p v-html="$store.state.site_details.meeting_hours">
+            </p>
         </div>
 
         <div class="col-md-3 mt-3 mb-5">
@@ -87,7 +77,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      domain: process.env.VUE_APP_DOMAIN,
+    };
   }
 };
 </script>

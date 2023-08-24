@@ -40,6 +40,7 @@
         </tr>
         <tr>
           <td>Meeting location</td>
+          <td v-html="$store.state.site_details.meeting_hours"></td>
           <!-- <td>Hotel de l’Annapurna, Durbar Marg</td> -->
         </tr>
       </table>

@@ -17,13 +17,13 @@
               <div class="row my-3">
                 <div class="col-md-6 col-sm-6 col-6">
                   <div class="cards-image">
-                    <img v-lazy="imageBase + item.imageUrl" class="img-fluid" />
+                    <img v-lazy="domain + item.image.url" class="img-fluid" v-if="item.image"/>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-6">
                   <div class="custom-card-text">
                     <h2 class="title">{{ item.name }}</h2>
-                    <span class="post">{{ item.title }}</span>
+                    <span class="post">{{ item.designation }}</span>
                   </div>
                 </div>
               </div>
@@ -40,251 +40,9 @@
 export default {
   data() {
     return {
-      imageBase: "/images/about/members/",
+      domain: process.env.VUE_APP_DOMAIN,
       members: [
-      {
-          name: "Amy Bunnell",
-          imageUrl: "amy.jpg"
-        },
-        {
-          name: "Kalpana Parajuli",
-          imageUrl: "kalpana.jpg"
-        },
-        {
-          name: "Dr. Neil Pande",
-          imageUrl: "neil.jpg"
-        },
-        {
-          name: "Buddha Basnyat",
-          imageUrl: "basnyat.jpg"
-        },
-        {
-          name: "Krishna Belbase",
-          imageUrl: "krishna.jpg"
-        },
-        {
-          name: "Werner Blaser",
-          imageUrl: "blaser.jpg"
-        },
-        {
-          name: "Govinda B. Chipalu",
-          imageUrl: "chipalu.jpg"
-        },
-        // {
-        //   name: "Komal B. Chitracar",
-        //   imageUrl: "chitracar.jpg"
-        // },
-        {
-          name: "Lisa Choegyal",
-          imageUrl: "choegyal.jpg"
-        },
-        // {
-        //   name: "Walter Diller",
-        //   imageUrl: "diller.jpg"
-        // },
-        {
-          name: "Sangita Einhouse Shrestha",
-          imageUrl: "einhaus.jpg"
-        },
-        {
-          name: "Basu Dev Gautam",
-          imageUrl: "gautam.jpg"
-        },
-        // {
-        //   name: "Kul Chandra Gautam",
-        //   imageUrl: "gautamkul.jpg"
-        // },
-        {
-          name: "Chandra Kumar Golchha",
-          imageUrl: "golchha.jpg"
-        },
-        {
-          name: "Ganesh Gurung",
-          imageUrl: "gurung.jpg"
-        },
-        {
-          name: "Prasun Jalan",
-          imageUrl: "jalan-prasun.jpg"
-        },
-        {
-          name: "Mani Dhoj Joshi",
-          imageUrl: "joshi-mani-dhoj.jpg"
-        },
-        {
-          name: "Subarna B Joshi",
-          imageUrl: "joshi-subarna.jpg"
-        },
-        {
-          name: "Tumla Lacoul",
-          imageUrl: "tumla-lacoul.jpg"
-        },
-        {
-          name: "Roop Jyoti",
-          imageUrl: "jyoti-roop.jpg"
-        },
-        {
-          name: "Gopal S. Lal Kakshapati",
-          imageUrl: "kakshapati.jpg"
-        },
-        // {
-        //   name: "Rabi Karmacharya",
-        //   imageUrl: "karmacharya.jpg"
-        // },
-        {
-          name: "Isabella C. Bassignana Khadka",
-          imageUrl: "isa.jpg"
-        },
-        {
-          name: "Rup Khadka",
-          imageUrl: "khadka.jpg"
-        },
-        {
-          name: "Jo Logghe",
-          imageUrl: "logghe.jpg"
-        },
-        {
-          name: "William Ma",
-          imageUrl: "william.jpg"
-        },
-        {
-          name: "Milan Maharjan",
-          imageUrl: "milan-maharjan.jpg"
-        },
-        // {
-        //   name: "Susen A. Mole",
-        //   imageUrl: "mole.jpg"
-        // },
-        // {
-        //   name: "Dale Mole",
-        //   imageUrl: "mole-dale.jpg"
-        // },
-    
-          {
-          name: "Bijay Bahadur Shrestha",
-          imageUrl: "bijayabahadur.jpg"
-        },
-        // {
-        //   name: "Maria-Teresa Mesquita Pessoa",
-        //   imageUrl: "pessoce.jpg"
-        // },
-        {
-          name: "Pramod Chandra Poudel",
-          imageUrl: "poudel-pramod.jpg"
-        },
-        {
-          name: "Neeva Mathema Pradhan",
-          imageUrl: "neeva.jpg"
-        },
-        {
-          name: "Yogendra Pradhan",
-          imageUrl: "yogendra.jpg"
-        },
-        {
-          name: "Paras S.J.B. Rana",
-          imageUrl: "rana-paras.jpg"
-        },
-        // {
-        //   name: "Shankar P. Sharma",
-        //   imageUrl: "sharma-shankar.jpg"
-        // },
-        {
-          name: "Arun Man Sherchan",
-          imageUrl: "sherchan.jpg"
-        },
-        {
-          name: "Rabindra Shrestha",
-          imageUrl: "rabindra-shrestha.jpg"
-        },
-        {
-          name: "Ramraj Shrestha",
-          imageUrl: "ramraj-shrestha.jpg"
-        },
-        {
-          name: "Mahendra Shrestha",
-          imageUrl: "shrestha-mahendra.jpg"
-        },
-        {
-          name: "Saroj Shrestha",
-          imageUrl: "shrestha-saroj.jpg"
-        },
-        {
-          name: "Ambica Shrestha",
-          imageUrl: "shrestha-ambica.jpg"
-        },
-        {
-          name: "Jyotsna Shrestha",
-          imageUrl: "shrestha-jyotsna.jpg"
-        },
-         {
-          name: "Karan Vaidya",
-          imageUrl: "karan.jpg"
-        },
-        {
-          name: "Ajaya R. Sthapit",
-          imageUrl: "sthapit.jpg"
-        },
-        {
-          name: "Krishna NS Thapa",
-          imageUrl: "thapa-khrishna.jpg"
-        },
-        {
-          name: "Rachana Thapa",
-          imageUrl: "rachana thapa.jpg"
-        },
-        {
-          name: "Shyam Raj Thapaliya",
-          imageUrl: "thapaliya-shyam.jpg"
-        },
-        {
-          name: "Anand Tuladhar",
-          imageUrl: "tuladhar-anand.jpg"
-        },
-        {
-          name: "Chandra Lekha Tuladhar",
-          imageUrl: "tuladhar-chandra.jpg"
-        },
-        {
-          name: "Lotti Weise",
-          imageUrl: "weise.jpg"
-        },
-        {
-          name: "Nirmal Rijal",
-          imageUrl: "nirmal.jpg"
-        },
-        {
-          name: "RUPY SINGH (RUPINDER KAUR)",
-          imageUrl: "rupy.jpg"
-        },
-        {
-          name: "Abhishek Raj",
-          imageUrl: "abhishek.jpg"
-        },
-        {
-           name: "Ranjit Acharya",
-          imageUrl: "ranjit-acharya.jpg"
-        },
-        {
-           name: "Rohit Man Pradhan",
-          imageUrl: "rohit-man-pradhan.jpg"
-        },
-         {
-           name: "Sangeeta Rana Thapa",
-          imageUrl: "sangeeta-rana-thapa.jpg"
-        },
-        {
-           name: "Peter Bodde",
-          imageUrl: "peter.jpg"
-        },
-        {
-           name: "Purusottam Mudbhary",
-          imageUrl: "purusottam.jpg"
-        },
-        
-         {
-           name: "Kulman Ghising",
-          imageUrl: "kulman-ghising.jpg",
-          title: "(Honorary Member)"
-        }
+   
       ],
       sorting: -1
     };
@@ -299,6 +57,11 @@ export default {
         a.name < b.name ? this.sorting : -this.sorting
       );
     }
+  },
+  mounted(){
+    this.$API.getMembers().then(data=>{
+      this.members = data.data.data
+    })
   }
 };
 </script>

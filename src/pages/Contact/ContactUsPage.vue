@@ -7,6 +7,9 @@
         <div class="fav-icon col-lg-4 text-center">
           <i class="fas fa-map-marker-alt"></i>
           <h5>Venue</h5>
+          <p v-html="$store.state.site_details.venue">
+
+          </p>
           <!-- <p class="py-3">
             Hotel de I'Annapurna
             <br />Durbar Marg
@@ -50,7 +53,6 @@
         </div>
       </div>
 
-      <p class="text-danger text-center" style="font-weight:bold;font-size: 18px">During the lockdown period please consult the calendar on the homepage for meeting time updates. </p>
       <div class="row mt-5">
         <div class="col-md-4">
           <h2>Please fill out this form</h2>

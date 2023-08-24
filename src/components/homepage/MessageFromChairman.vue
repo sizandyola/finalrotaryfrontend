@@ -3,7 +3,7 @@
   <div class="container py-5">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="text-center text-white">MESSAGES FOR 2021-2022</h1>
+        <h1 class="text-center text-white">MESSAGES FOR {{ $store.state.site_details.current_year }}</h1>
         <!-- <div class="container">
           <div class="message-name row mt-3 text-center">
            
@@ -35,24 +35,24 @@
            <div class="row">
           <div class="col-md-4" v-for="msg in messages" :key="msg.id">
             <div class="card">
-            <div class="message-image card-image">
-              <img :src="msg.acf.image" class="" />
+            <div class="message-image card-image" v-if="msg.image">
+              <img :src="domain +msg.image[0].url" class="" />
             </div>
             <div class="card-body">
             <div class="message-name">
               <h2>
-                {{msg.title.rendered}}
+                {{msg.name}}
               </h2>
               
             </div>
             <div class="message-title">
-               {{msg.acf.designation}}
+               {{msg.designation}}
             </div>
-            <div class="message" v-html="msg.acf.message" v-line-clamp:20="4">
+            <div class="message" v-html="msg.message" v-line-clamp:20="4">
               
             </div>
 
-            <router-link style="text-decoration: underline;font-weight:bold;cursor:pointer" class="mt-4" :to="'/message/'+msg.slug" v-if="msg.acf.message">Read More</router-link>
+            <router-link style="text-decoration: underline;font-weight:bold;cursor:pointer" class="mt-4" :to="'/message/'+msg.id" >Read More</router-link>
           </div>
           </div>
         </div>
@@ -246,6 +246,7 @@
 export default {
   data() {
     return {
+      domain: process.env.VUE_APP_DOMAIN,
       currentMessage: 0,
       message: [
         "Ktm Mid-Town President",
@@ -264,9 +265,8 @@ export default {
    
   },
   mounted(){
-    this.$API.getMessagesFrom().then(data=>{
-      console.log(data.data);
-      this.messages = data.data;
+    this.$API.getMessages().then(data=>{
+      this.messages = data.data.data;
     }).catch(error=>{
       console.log(error);
     })

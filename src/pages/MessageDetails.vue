@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="message-image ">
-              <img :src="msg.acf.image" class="img-fluid" />
+                  <img :src="domain+ msg.image[0].url" class="img-fluid" />
             </div>
 
         
@@ -14,15 +14,15 @@
             <div class="">
             <div class="message-name">
               <h2>
-                {{msg.title.rendered}}
+                {{msg.name}}
               </h2>
               
             </div>
             <div class="message-title">
-               {{msg.acf.designation}}
+               {{msg.designation}}
             </div>
 
-            <div class="message" v-html="msg.acf.message" >
+            <div class="message" v-html="msg.message" >
               
             </div>
             </div>
@@ -38,15 +38,16 @@
 export default {
     data(){
         return{
+          domain: process.env.VUE_APP_DOMAIN,
             msg:{}
         }
     },
 
     mounted(){
-        let slug = this.$route.params.name;
-         this.$API.getMessagesFromSlug(slug).then(data=>{
+        let slug = this.$route.params.id;
+         this.$API.getMessagesFromId(slug).then(data=>{
       
-      this.msg = data.data[0];
+      this.msg = data.data.data;
       
     }).catch(error=>{
       console.log(error);

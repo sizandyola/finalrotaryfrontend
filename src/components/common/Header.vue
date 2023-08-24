@@ -18,13 +18,13 @@
       <nav id="sticky-nav">
         <div class="container py-3">
           <div class="row">
-            <div class="logo col-3">
+            <div class="logo col-md-4">
               <router-link to="/">
-                <img src="/images/logo_top.png" alt="logo" class="logo" />
+                <img :src="domain + $store.state.site_details.site_logo.url" alt="logo" class="logo" />
               </router-link>
             </div>
             <div
-              class="col-6 text-center d-flex align-items-center justify-content-center connect-with-us"
+              class="col-md-6 text-center d-flex align-items-center justify-content-center connect-with-us"
             >
               <a
                 href="https://www.facebook.com/RotaryClubOfKathmanduMidtown/"
@@ -40,9 +40,9 @@
               </a>
             </div>
 
-            <div class="col-3 text-right">
+            <div class="col-md-2 text-right">
               <router-link to="/">
-                <img src="/images/serve-to-change-lives.jpg" alt="logo" class="logo" style="height:80px"/>
+                <img :src="domain + $store.state.site_details.site_motto_logo.url" alt="logo" class="logo" style="height:80px"/>
               </router-link>
             </div>
           </div>
@@ -139,6 +139,7 @@ import Vue from "vue";
 export default {
   data() {
     return {
+      domain: process.env.VUE_APP_DOMAIN,
       dropStatus: false,
       navItems: [],
       sidebarStatus: false
@@ -411,7 +412,7 @@ ul li a:hover {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1004px) {
   nav {
     display: none;
   }

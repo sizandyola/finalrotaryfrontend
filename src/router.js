@@ -95,7 +95,7 @@ export default new Router({
       hide: true
     },
     {
-      path: "/message/:name",
+      path: "/message/:id",
       name: "Message Details",
       component: MessageDetails,
       hide: true
