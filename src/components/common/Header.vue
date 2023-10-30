@@ -84,10 +84,11 @@
           <i class="fas fa-bars bars mr-3" @click="sidebarToggle"></i>
           <div class="d-flex justify-content-between" style="width:100%">
             <router-link to="/">
-              <img src="/images/logo_top.png" alt="logo" class="logo" />
+              <img :src="domain + $store.state.site_details.site_logo.url" alt="logo" class="logo" />
             </router-link>
             <router-link to="/">
-              <img src="/images/serve-to-change-lives.jpg" alt="logo" class="logo" />
+              <img :src="domain + $store.state.site_details.site_motto_logo.url" alt="logo" class="logo"/>
+              <!-- <img src="/images/serve-to-change-lives.jpg" alt="logo" class="logo" /> -->
             </router-link>
           </div>
         </div>
