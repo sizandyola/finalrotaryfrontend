@@ -156,9 +156,9 @@ export default {
     }
   },
   mounted(){
-    console.log("VUE_APP_BASE_URL",process.env.VUE_APP_BASE_URL)
+    
     this.$API.getBoardMembers().then(data=>{
-      console.log("data", data.data.data)
+    
       this.members = data.data.data
     })
   }
