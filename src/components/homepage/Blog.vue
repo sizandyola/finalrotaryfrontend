@@ -27,9 +27,9 @@
                     </ul>
                   </div>
                 </div>
-                <div class="summary">
+                <!-- <div class="summary">
                   <p v-html="item.acf.description" class="summary-text"></p>
-                </div>
+                </div> -->
                 <div class="read-more mt-1">
                   <i class="fas fa-external-link-alt mr-2"></i>
                   <router-link :to="'news-updates/'+item.id">Read More</router-link>

@@ -10,7 +10,7 @@
     <div class="custom-card">
       <div class="row ">
         <div class="col-md-4 text-center">
-          <img src="https://rotarymidtown.org.np/admin/wp-content/uploads/2021/04/PHOTO-BRICK-FACTORY-home-page.jpg" class="img-fluid mt-4" alt />
+          <img src="https://admin.rotarymidtown.org.np/wp-content/uploads/2021/04/PHOTO-BRICK-FACTORY-home-page.jpg" class="img-fluid mt-4" alt />
         </div>
         <div class="col-md-8 ">
           <h4>Seeking Support for the Education of Disadvantaged Children of Brick Factory Workers</h4>

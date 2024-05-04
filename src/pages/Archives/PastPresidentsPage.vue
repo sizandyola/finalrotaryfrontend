@@ -26,12 +26,14 @@
 
     <div class="row my-5" v-for="(pres,index) in pastPresidents" :key="index">
       <div class="col-lg-3 text-center">
-        <img :src="imageBase+pres.photo" alt />
+        <img :src="imageBase+pres.photo" alt v-if="!pres.isCloudLink"/>
+        <img :src="pres.photo" alt v-if="pres.isCloudLink"/>
         <h2 class="mt-2 text-center">{{pres.name}}</h2>
         <p class="date text-center">{{pres.date}}</p>
+        <p class="date text-center" v-if="pres.extraInfo">{{pres.extraInfo}}</p>
       </div>
-      <div class="col-lg-9 details text-center">
-        <img :src="imageBase+pres.theme" class="logo" />
+      <div class="col-lg-9 details text-center" v-if="pres.ri">
+        <img :src="pres.isCloudLink? pres.theme: imageBase+pres.theme" class="logo" />
         <h2 class="my-3">RI President</h2>
         <p v-html="pres.ri"></p>
       </div>
@@ -259,7 +261,40 @@ export default {
           theme: "roo.png",
           photo: "kns.jpg",
           ri: "Holger Knaack, Rotary Club of Herzogtum Lauenburg-Mölln, Germany"
-        }
+        },
+        {
+          name: "Pramod Paudel",
+          date: "(2021-2022)",
+          theme: "https://rotary.circallstrading.com/uploads/serve_to_change_lives_76dc293a76.png",
+          isCloudLink: true,
+          photo: "https://rotary.circallstrading.com/uploads/poudel_pramod_4817c07938.jpg",
+          ri: "Holger Knaack, Rotary Club of Herzogtum Lauenburg-Mölln, Germany"
+        },
+        {
+          name: "Dr. Nirmal Rijal",
+          date: "(2022-2023)",
+          isCloudLink: true,
+          theme: "https://rotary.circallstrading.com/uploads/imagine_rotary_46322946a2.png",
+          photo: "https://rotary.circallstrading.com/uploads/nirmal_e56f7669ec.jpeg",
+          ri: "Jennifer Jones Rotary Club of Windsor-Reseland, Ontario, Canada"
+        },
+        {
+          name: "Lisa Choegyal",
+          date: "(2023-2024)",
+          isCloudLink: true,
+          theme: "https://rotary.circallstrading.com/uploads/create_hope_b96ac5c88b.jpg",
+          photo: "https://rotary.circallstrading.com/uploads/choegyal_4a89deab8d.jpg",
+          ri: "Gordon Mclnally"
+        },
+        {
+          name: "Rupinder (Rupy) Kaur Singh",
+          date: "(2024-2025)",
+          extraInfo: "President elect",
+          isCloudLink: true,
+          theme: "https://rotary.circallstrading.com/uploads/magic_of_rotary_edb27e380f.jpg",
+          photo: "https://rotary.circallstrading.com/uploads/rupy_b4a5d48901.jpg",
+          ri: "Stephanie A. Urchick"
+        },
       ]
     };
   }

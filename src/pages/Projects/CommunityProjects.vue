@@ -11,7 +11,7 @@
             <div class="row p-0">
               <div class="col-md-4 d-flex align-items-center">
                 <img
-                  src="https://rotarymidtown.org.np/admin/wp-content/uploads/2021/04/PHOTO-BRICK-FACTORY-home-page.jpg"
+                  src="https://admin.rotarymidtown.org.np/wp-content/uploads/2021/04/PHOTO-BRICK-FACTORY-home-page.jpg"
                   class="img-fluid"
                 />
               

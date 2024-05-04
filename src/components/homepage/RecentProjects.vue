@@ -9,16 +9,16 @@
 
         <div class="col-md-4 mt-3">
           <div class="card" style="display:table">
-            <div class="card-img-top">
-              <img src="/images/our-projects/simpani-gairigaon-closure.jpg" class="img-fluid" alt />
+            <div class="card-img-top" style="min-height: 290px; display: flex; align-items: center;">
+              <img src="https://rotary.circallstrading.com/uploads/career_connection_efec7d5c62.png" class="img-fluid" alt />
             </div>
             <div class="card-body">
               <div class="card-title">
-                <h2>Simpani Gairigaon Lift Water Supply for Drinking and Sanitation </h2>
+                <h2>Career Connection</h2>
               </div>
               <div class="card-text read-more">
                 <i class="fas fa-external-link-alt mr-2"></i>
-                <router-link :to="{name:'Global Grants',hash:'#simpani-gairigaon'}">Read More</router-link>
+                <router-link :to="{name:'Global Grants',hash:'#career-connection'}">Read More</router-link>
               </div>
             </div>
           </div>

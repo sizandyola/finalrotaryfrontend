@@ -61,7 +61,7 @@ class APIService {
 
   sendContactUs(data) {
     return axios.post(
-      "https://rotarymidtown.org.np/admin/wp-json/contact-form-7/v1/contact-forms/127/feedback",
+      "https://admin.rotarymidtown.org.np/wp-json/contact-form-7/v1/contact-forms/127/feedback",
       data,
       {
         headers: {
@@ -73,13 +73,13 @@ class APIService {
 
   getPhotos() {
     return axios.get(
-      "https://rotarymidtown.org.np/admin/wp-json/wp/v2/year_category"
+      "https://admin.rotarymidtown.org.np/wp-json/wp/v2/year_category"
     );
   }
 
   getCatwisePhotos(id) {
     return axios.get(
-      "https://rotarymidtown.org.np/admin/wp-json/wp/v2/rotary_year_photos?year_category=" +
+      "https://admin.rotarymidtown.org.np/wp-json/wp/v2/rotary_year_photos?year_category=" +
         id
     );
   }

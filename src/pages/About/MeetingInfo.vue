@@ -30,7 +30,7 @@
         </tr>
         <tr>
           <td>Weekly Meeting</td>
-          <td>Please check the calendar on our web page for the latest meeting information.</td>
+          <td>Please check the calendar on our home page for the latest meeting information.</td>
         </tr>
         <tr>
           <td>Web page</td>
