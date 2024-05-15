@@ -73,7 +73,7 @@ class APIService {
 
   getPhotos() {
     return axios.get(
-      "https://admin.rotarymidtown.org.np/wp-json/wp/v2/year_category"
+      "https://admin.rotarymidtown.org.np/wp-json/wp/v2/year_category?per_page=100"
     );
   }
 
