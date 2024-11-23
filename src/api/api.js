@@ -16,9 +16,7 @@ class APIService {
   }
 
   getSiteDetails() {
-    return axios.get(
-      process.env.VUE_APP_BASE_URL + "/site-detail?populate=*&sort=rank:asc"
-    );
+    return axios.get(process.env.VUE_APP_BASE_URL + "/site-detail?populate=*");
   }
 
   getMessages() {
