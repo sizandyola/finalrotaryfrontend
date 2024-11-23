@@ -268,7 +268,7 @@ export default {
           theme: "https://rotary.circallstrading.com/uploads/serve_to_change_lives_76dc293a76.png",
           isCloudLink: true,
           photo: "https://rotary.circallstrading.com/uploads/poudel_pramod_4817c07938.jpg",
-          ri: "Holger Knaack, Rotary Club of Herzogtum Lauenburg-Mölln, Germany"
+          ri: "Shekhar Mehta, Rotary Club of Calcutta- Mahanagar, West Bengal, India"
         },
         {
           name: "Dr. Nirmal Rijal",
