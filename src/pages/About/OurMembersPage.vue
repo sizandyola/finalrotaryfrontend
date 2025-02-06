@@ -16,8 +16,12 @@
             <div class="custom-card">
               <div class="row my-3">
                 <div class="col-md-6 col-sm-6 col-6">
-                  <div class="cards-image">
-                    <img v-lazy="domain + item.image.url" class="img-fluid" v-if="item.image"/>
+                  <div class="card-image">
+                    <img
+                      v-lazy="domain + item.image.url"
+                      class="img-fluid"
+                      v-if="item.image"
+                    />
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-6">
@@ -41,10 +45,8 @@ export default {
   data() {
     return {
       domain: process.env.VUE_APP_DOMAIN,
-      members: [
-   
-      ],
-      sorting: -1
+      members: [],
+      sorting: -1,
     };
   },
 
@@ -56,18 +58,19 @@ export default {
       return this.members.sort((a, b) =>
         a.name < b.name ? this.sorting : -this.sorting
       );
-    }
+    },
   },
-  mounted(){
-    this.$API.getMembers().then(data=>{
-      this.members = data.data.data
-    })
-  }
+  mounted() {
+    this.$API.getMembers().then((data) => {
+      this.members = data.data.data;
+    });
+  },
 };
 </script>
 
 <style scoped>
 .card-image {
+  min-height: 160px;
   width: auto;
   overflow: hidden;
   display: flex;

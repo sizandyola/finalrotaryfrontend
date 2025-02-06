@@ -48,27 +48,27 @@
          <div class="row">
           <div class="col-md-6">
             <div class="img-wrapper">
-              <img src="https://rotarymidtown.org.np/admin/wp-content/uploads/2021/04/1.-PHOTO-ROTARACTS-Quiz-with-visually-impaired-children.jpg" class="img-">
+              <img src="https://admin.rotarymidtown.org.np/wp-content/uploads/2021/04/1.-PHOTO-ROTARACTS-Quiz-with-visually-impaired-children.jpg" class="img-">
             </div>
           </div>
           <div class="col-md-6">
             <div class="img-wrapper">
-              <img src="https://rotarymidtown.org.np/admin/wp-content/uploads/2021/04/2.-PHOTO-ROTARACTS-Coffee-connect.jpg" class="img-">
+              <img src="https://admin.rotarymidtown.org.np/wp-content/uploads/2021/04/2.-PHOTO-ROTARACTS-Coffee-connect.jpg" class="img-">
             </div>
           </div>
           <div class="col-md-6 mt-3">
             <div class="img-wrapper">
-              <img src="https://rotarymidtown.org.np/admin/wp-content/uploads/2021/04/3.-PHOTO-ROTARACTS-youth-consultation-on-sexual-and-reproductive-health-right.jpg" class="img-">
+              <img src="https://admin.rotarymidtown.org.np/wp-content/uploads/2021/04/3.-PHOTO-ROTARACTS-youth-consultation-on-sexual-and-reproductive-health-right.jpg" class="img-">
             </div>
           </div>
           <div class="col-md-6 mt-3">
             <div class="img-wrapper">
-              <img src="https://rotarymidtown.org.np/admin/wp-content/uploads/2021/04/4.-PHOTO-ROTARACTS-Breast-feeding-awareness.jpg" class="img-">
+              <img src="https://admin.rotarymidtown.org.np/wp-content/uploads/2021/04/4.-PHOTO-ROTARACTS-Breast-feeding-awareness.jpg" class="img-">
             </div>
           </div>
           <div class="col-md-6 mt-3">
             <div class="img-wrapper">
-              <img src="https://rotarymidtown.org.np/admin/wp-content/uploads/2021/04/5.-PHOTO-ROTARACT-Installation.jpg" class="img-">
+              <img src="https://admin.rotarymidtown.org.np/wp-content/uploads/2021/04/5.-PHOTO-ROTARACT-Installation.jpg" class="img-">
             </div>
           </div>
           <div class="col-md-6 mt-3">

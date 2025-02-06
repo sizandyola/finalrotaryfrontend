@@ -4,6 +4,27 @@
       <h1 class="text-left">Global Grants</h1>
       <hr class="my-4" />
 
+      <p id="career-connection"></p>
+       <div class="custom-card container">
+        <h4 class="p-3">Recently Opened: Career Connection</h4>
+         
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <img src="https://rotary.circallstrading.com/uploads/career_connection_efec7d5c62.png" class="img-fluid snakebite" />
+          </div>
+          <div class="col-md-8">
+           
+            <p>
+              This is an interesting new initiative that aims to provide career guidance, training, and connection opportunities to young people in Nepal who face challenges in accessing education and lack support and guidance in order to pursue their chosen career goals. 
+The Career Connection Program is an innovative and important initiative that has the potential to make a real difference in the lives of young people in Nepal. The program leverages the strengths and expertise of both EduLift and Rotary to provide the assistance that youth in the Kathmandu Valley will need to become fully functioning and contributing members of society.
+            </p>
+        
+        
+          </div>
+        </div>
+   
+      </div>
+
         <p id="snakebite"></p>
        <div class="custom-card container">
         <h4 class="p-3">Ongoing Global Grant: Snakebite Prevention and Awareness Project</h4>
@@ -42,7 +63,7 @@ We are happy to acknowledge our partners: The Rotary Club of Salt Lake City, RID
       <div class="custom-card">
         <div class="row align-items-center">
           <div class="col-md-8">
-            <h4 class="p-3">Ongoing Global Grant: Early Years Education Support Project in Nuwakot and Sindulpalchowk</h4>
+            <h4 class="p-3">Recently closed Global Grant: Early Years Education Support Project in Nuwakot and Sindulpalchowk</h4>
 
             <p class="text-justify p-3">
               <img
@@ -55,11 +76,32 @@ We are happy to acknowledge our partners: The Rotary Club of Salt Lake City, RID
                 href="/images/our-projects/Global Grant First Steps.pdf"
                 target="_blank"
               >See Detailed Report</a>
+
             </p>
-            <p></p>
           </div>
           <div class="col-md-4 text-center">
             <img src="/images/our-projects/first-steps.jpg" class="img-fluid" />
+          </div>
+
+          
+            <div class="col-md-12">
+                
+            <p class="p-3">
+                (Update) On Sunday 3 March 2024 nine Midtowners including  President, VP and Treasurer and two Rotaracts enjoyed a great day in Sindupalchok visiting our First Steps Early Years Education Global Grant project, hosted by CEO Durga Aran and his staff. Braving wet weather and poor roads, the team visited the four kindergarten classes of Shree Kalikadevi school at Sangachok. We then drove to the training centre and primary school at Jana Jyoti, both constructed by First Steps Nepal. After 11 years successful collaboration and three consecutive GGs, this was a memorable final  monitoring visit. We travelled in Rupy’s International Schools yellow buses and enjoyed a splendid lunch at the Early Years Education teacher training Centre.
+              </p>
+            
+          </div>
+          <div class="col-md-3">
+            <img src="https://rotary.circallstrading.com/uploads/early_years_1_a74c7f0779.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-3">
+            <img src="https://rotary.circallstrading.com/uploads/early_years_2_a9100ae44a.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-3">
+            <img src="https://rotary.circallstrading.com/uploads/early_years_4_1dd1cb0375.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-3">
+            <img src="https://rotary.circallstrading.com/uploads/early_years_5_0adb462fb2.jpg" class="img-fluid" alt="">
           </div>
         </div>
       </div>
@@ -73,7 +115,7 @@ We are happy to acknowledge our partners: The Rotary Club of Salt Lake City, RID
           <div class="col-md-8">
             <h4
               class="p-3"
-            >Recently Closed: Simpani Gairigaon Lift Water Supply for Drinking and Sanitation (GG1754006) in collaboration with Masan-East Rotary Club (S Korea)</h4>
+            >Closed: Simpani Gairigaon Lift Water Supply for Drinking and Sanitation (GG1754006) in collaboration with Masan-East Rotary Club (S Korea)</h4>
 
             <p
               class="text-justify p-3"
@@ -97,7 +139,7 @@ We are happy to acknowledge our partners: The Rotary Club of Salt Lake City, RID
           <div class="col-md-8">
             <h4
               class="p-3"
-            >Recently Closed: Preventing Hearing Loss Among Nepalese Children (GG1637950)</h4>
+            >Closed: Preventing Hearing Loss Among Nepalese Children (GG1637950)</h4>
 
             <p class="text-justify">
               <img

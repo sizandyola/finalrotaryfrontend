@@ -140,7 +140,7 @@ Major Donor <br>
 <p>
 -When we were chartered we were the first club in the region to be a breakfast club</p>
 <p>
--Until very recently, we were the only club to always conduct meetings in English – and because we are located in Kathmandu, we have always attracted members from the international community: ambassadors, and other staff who work at embassies and foreigners who work in international agencies and the like. At present, 5 of our members are Honorary Consuls. (Spain, Canada, Latvia, Belgium and New Zealand).</p>
+-Until very recently, we were the only club to always conduct meetings in English – and because we are located in Kathmandu, we have always attracted members from the international community: ambassadors, and other staff who work at embassies and foreigners who work in international agencies and the like. At present, 4 of our members are Honorary Consuls (Spain, Canada, Belgium and New Zealand).</p>
 <p>
 -We are a 100% Paul Harris Fellow Club</p>
 <p>

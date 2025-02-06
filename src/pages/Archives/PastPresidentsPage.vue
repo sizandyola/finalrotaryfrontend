@@ -12,30 +12,38 @@
       <!-- <div class="col-lg-1">
       </div>-->
       <div class="col-lg-9 details text-center">
-        <img src="/images/past-presidients/enjoy-rotary.jpg" class="logo mr-3" />
+        <img
+          src="/images/past-presidients/enjoy-rotary.jpg"
+          class="logo mr-3"
+        />
         <img src="/images/past-presidients/honor-rotary.jpg" class="logo" />
         <h2 class="my-3">RI Presidents</h2>
         <p>Hugh M. Archer Rotary Club of Dearborn, Michigan, USA</p>
         <p>
-          Paulo V.C. Costa Rotary Club of Santos
-          São Paulo,
-          Brazil
+          Paulo V.C. Costa Rotary Club of Santos São Paulo, Brazil
         </p>
       </div>
     </div>
 
-    <div class="row my-5" v-for="(pres,index) in pastPresidents" :key="index">
+    <div class="row my-5" v-for="(pres, index) in pastPresidents" :key="index">
       <div class="col-lg-3 text-center">
-        <img :src="imageBase+pres.photo" alt />
-        <h2 class="mt-2 text-center">{{pres.name}}</h2>
-        <p class="date text-center">{{pres.date}}</p>
+        <img :src="imageBase + pres.photo" alt v-if="!pres.isCloudLink" />
+        <img :src="pres.photo" alt v-if="pres.isCloudLink" />
+        <h2 class="mt-2 text-center">{{ pres.name }}</h2>
+        <p class="date text-center">{{ pres.date }}</p>
+        <p class="date text-center" v-if="pres.extraInfo">
+          {{ pres.extraInfo }}
+        </p>
       </div>
-      <div class="col-lg-9 details text-center">
-        <img :src="imageBase+pres.theme" class="logo" />
+      <div class="col-lg-9 details text-center" v-if="pres.ri">
+        <img
+          :src="pres.isCloudLink ? pres.theme : imageBase + pres.theme"
+          class="logo"
+        />
         <h2 class="my-3">RI President</h2>
         <p v-html="pres.ri"></p>
       </div>
-      <hr style="background-color: #FAA72F; color: #FAA72F"/>
+      <hr style="background-color: #FAA72F; color: #FAA72F" />
     </div>
   </div>
 </template>
@@ -52,21 +60,21 @@ export default {
           theme: "look-beyond.jpg",
           photo: "Late-Anoop-Rana.jpg",
           ri:
-            "Rajendra K. Saboo Rotary Club of Chandigarh Union Territory, India"
+            "Rajendra K. Saboo Rotary Club of Chandigarh Union Territory, India",
         },
         {
           name: "Ambica Shrestha",
           date: "(1992-93)",
           theme: "real-happiness.jpg",
           photo: "ambica.jpg",
-          ri: "Clifford L. Dochterman Rotary Club of Moraga California, USA"
+          ri: "Clifford L. Dochterman Rotary Club of Moraga California, USA",
         },
         {
           name: "Anand Tuladhar",
           date: "(1993-94)",
           theme: "believe.jpg",
           photo: "anand.jpg",
-          ri: "Robert Barth Rotary Club of Aarau Switzerland"
+          ri: "Robert Barth Rotary Club of Aarau Switzerland",
         },
         {
           name: "Late Niranjan Man Pradhan",
@@ -74,14 +82,14 @@ export default {
           theme: "be-a-friend.jpg",
           photo: "niranjan.jpg",
           ri:
-            "Bill Huntley Rotary Club of Alford & Mablethorpe Lincolnshire, England"
+            "Bill Huntley Rotary Club of Alford & Mablethorpe Lincolnshire, England",
         },
         {
           name: "Yogendra Man Pradhan",
           date: "(1995-96)",
           photo: "yogendra.jpg",
           theme: "act.jpg",
-          ri: "Herbert G. Brown Rotary Club of Clearwater Florida, USA"
+          ri: "Herbert G. Brown Rotary Club of Clearwater Florida, USA",
         },
         {
           name: "Dr. Chandra Lekha Tuladhar",
@@ -89,7 +97,7 @@ export default {
           photo: "chandra.jpg",
           theme: "build.jpg",
           ri:
-            "Luis Vicente Giay Rotary Club of Arrecifes Buenos Aires, Argentina"
+            "Luis Vicente Giay Rotary Club of Arrecifes Buenos Aires, Argentina",
         },
         {
           name: "Mani Dhoj Joshi",
@@ -97,172 +105,216 @@ export default {
           photo: "mani.jpg",
           theme: "show.jpg",
           ri:
-            "Glen W. Kinross Rotary Club of Hamilton, Brisbane Queensland, Australia"
+            "Glen W. Kinross Rotary Club of Hamilton, Brisbane Queensland, Australia",
         },
         {
           name: "Gopal Sundar Lal Kakshapati",
           date: "(1998-99)",
           photo: "gopal.jpg",
           theme: "follow.jpg",
-          ri: "James L. Lacy Rotary Club of Cookeville Tennessee, USA"
+          ri: "James L. Lacy Rotary Club of Cookeville Tennessee, USA",
         },
         {
           name: "Late Giridhar Lal Manandhar",
           date: "(1999-2000)",
           photo: "giridhar.jpg",
           theme: "act-with.jpg",
-          ri: "Carlo Ravizza Rotary Club of Milano Sud-Ovest, Italy"
+          ri: "Carlo Ravizza Rotary Club of Milano Sud-Ovest, Italy",
         },
         {
           name: "William Ma",
           date: "(2000-01)",
           photo: "william.jpg",
           theme: "awareness.jpg",
-          ri: "Frank J. Devlyn Rotary Club of Anáhuac Distrito Federal, Mexico"
+          ri: "Frank J. Devlyn Rotary Club of Anáhuac Distrito Federal, Mexico",
         },
         {
           name: "Ajaya Ratna Sthapith",
           date: "(2001-02)",
           photo: "ajaya.jpg",
           theme: "mankind.jpg",
-          ri: "Richard D. King Rotary Club of Niles (Fremont) California, USA"
+          ri: "Richard D. King Rotary Club of Niles (Fremont) California, USA",
         },
         {
           name: "Hartmut Bauder",
           date: "(2002-03)",
           photo: "hartmut.jpg",
           theme: "sow-the-seeds.jpg",
-          ri: "Bhichai Rattakul Rotary Club of Dhonburi Thailand"
+          ri: "Bhichai Rattakul Rotary Club of Dhonburi Thailand",
         },
         {
           name: "Jyotsna Shrestha",
           date: "(2003-04)",
           theme: "lend-a-hand.jpg",
           photo: "jyotsna.jpg",
-          ri: "Jonathan B. Majiyagbe Rotary Club of Kano Kano State, Nigeria"
+          ri: "Jonathan B. Majiyagbe Rotary Club of Kano Kano State, Nigeria",
         },
         {
           name: "Arun Man Sherchan",
           date: "(2004-05)",
           theme: "celebrate.jpg",
           photo: "arun.jpg",
-          ri: "Glenn E. Estess Sr. Rotary Club of Shades Valley Alabama, USA"
+          ri: "Glenn E. Estess Sr. Rotary Club of Shades Valley Alabama, USA",
         },
         {
           name: "Komal Chitrakar",
           date: "(2005-06)",
           theme: "service.jpg",
           photo: "komal.jpg",
-          ri: "Carl-Wilhelm Stenhammar Rotary Club of Göteborg Sweden"
+          ri: "Carl-Wilhelm Stenhammar Rotary Club of Göteborg Sweden",
         },
         {
           name: "Chandra Kumar Golchha",
           date: "(2006-07)",
           theme: "lead-the-way.jpg",
           photo: "chandra-kumar.jpg",
-          ri: "William B. Boyd Rotary Club of Pakuranga Auckland, New Zealand"
+          ri: "William B. Boyd Rotary Club of Pakuranga Auckland, New Zealand",
         },
         {
           name: "Walter Diller",
           date: "(2007-08)",
           theme: "rotary-shares.jpg",
           photo: "walter.jpg",
-          ri: "Wilfrid J. Wilkinson Rotary Club of Trenton Ontario, Canada"
+          ri: "Wilfrid J. Wilkinson Rotary Club of Trenton Ontario, Canada",
         },
         {
           name: "Ram Raj Shrestha",
           date: "(2008-09)",
           theme: "make-dreams-real.jpg",
           photo: "ramraj-shrestha.jpg",
-          ri: "Dong Kurn Lee Rotary Club of Seoul Hangang Seoul, Korea"
+          ri: "Dong Kurn Lee Rotary Club of Seoul Hangang Seoul, Korea",
         },
         {
           name: "Subarna Joshi",
           date: "(2009-10)",
           theme: "the-future.jpg",
           photo: "subarna.jpg",
-          ri: "John Kenny Rotary Club of Grangemouth Scotland"
+          ri: "John Kenny Rotary Club of Grangemouth Scotland",
         },
         {
           name: "Late Pratap Malla",
           date: "(2010-11)",
           theme: "building.jpg",
           photo: "pratap.jpg",
-          ri: "Ray Klinginsmith Rotary Club of Kirksville Missouri, USA"
+          ri: "Ray Klinginsmith Rotary Club of Kirksville Missouri, USA",
         },
         {
           name: "Som P. Pudasaini",
           date: "(2011-12)",
           theme: "reach.jpg",
           photo: "som.jpg",
-          ri: "Kalyan Banerjee Rotary Club of Vapi Gujarat, India"
+          ri: "Kalyan Banerjee Rotary Club of Vapi Gujarat, India",
         },
         {
           name: "Devendra N.Gongol",
           date: "(2012-13)",
           theme: "peace.jpg",
           photo: "devendra.jpg",
-          ri: "Sakuji Tanaka Rotary Club of Yashio Japan"
+          ri: "Sakuji Tanaka Rotary Club of Yashio Japan",
         },
         {
           name: "Saroj Shrestha",
           date: "(2013-14)",
           theme: "engage.jpg",
           photo: "saroj.jpg",
-          ri: "Ron D. Burton Rotary Club of Norman Oklahoma, USA"
+          ri: "Ron D. Burton Rotary Club of Norman Oklahoma, USA",
         },
         {
           name: "Kul Chandra Gautam",
           date: "(2014-15)",
           theme: "light-up.jpg",
           photo: "kul-chandra.jpg",
-          ri: "Gary Huang Rotary Club of Taipei Taiwan Taipei, Taiwan"
+          ri: "Gary Huang Rotary Club of Taipei Taiwan Taipei, Taiwan",
         },
         {
           name: "Paras J B Rana",
           date: "(2015-16)",
           theme: "be-a-gift.png",
           photo: "paras.jpg",
-          ri: "K.R. “Ravi” Ravindran Rotary Club of Columbo Sri Lanka"
+          ri: "K.R. “Ravi” Ravindran Rotary Club of Columbo Sri Lanka",
         },
         {
           name: "Shanker Sharma",
           date: "(2016-17)",
           theme: "rotary-serving.png",
           photo: "shanker.jpg",
-          ri: "John F. Germ Rotary Club of Chattanooga Chattanooga, Tennessee"
+          ri: "John F. Germ Rotary Club of Chattanooga Chattanooga, Tennessee",
         },
         {
           name: "Bhairaja Panday",
           date: "(2017-18)",
           theme: "rotary-making-difference.png",
           photo: "bhairaja.jpg",
-          ri: "Ian H.S. Riseley Rotary Club of Sandringham Victoria, Australia"
+          ri: "Ian H.S. Riseley Rotary Club of Sandringham Victoria, Australia",
         },
         {
           name: "Jo Logghe",
           date: "(2018-19)",
           photo: "jo-logghe.jpg",
           theme: "be-the-inspiration.png",
-          ri: "Barry Rassin Rotary Club of East Nassau New Providence, Bahamas"
+          ri: "Barry Rassin Rotary Club of East Nassau New Providence, Bahamas",
         },
         {
           name: "Neeva Mathema Pradhan",
           date: "(2019-20)",
           theme: "rotary-connects.jpg",
           photo: "neeva.jpg",
-          ri: "Mark Daniel Maloney, of the Rotary Club of Decatur, Alabama, USA"
+          ri:
+            "Mark Daniel Maloney, of the Rotary Club of Decatur, Alabama, USA",
         },
-         {
+        {
           name: "Lt. Gen. KNS Thapa (Ret’d.)",
           date: "(2020-2021)",
           theme: "roo.png",
           photo: "kns.jpg",
-          ri: "Holger Knaack, Rotary Club of Herzogtum Lauenburg-Mölln, Germany"
-        }
-      ]
+          ri:
+            "Holger Knaack, Rotary Club of Herzogtum Lauenburg-Mölln, Germany",
+        },
+        {
+          name: "Pramod Paudel",
+          date: "(2021-2022)",
+          theme:
+            "https://rotary.circallstrading.com/uploads/serve_to_change_lives_76dc293a76.png",
+          isCloudLink: true,
+          photo:
+            "https://rotary.circallstrading.com/uploads/poudel_pramod_4817c07938.jpg",
+          ri:
+            "Shekar Mehta, Rotary Club of Calcutta - Mahanagar, West Bengal, India",
+        },
+        {
+          name: "Dr. Nirmal Rijal",
+          date: "(2022-2023)",
+          isCloudLink: true,
+          theme:
+            "https://rotary.circallstrading.com/uploads/imagine_rotary_46322946a2.png",
+          photo:
+            "https://rotary.circallstrading.com/uploads/nirmal_e56f7669ec.jpeg",
+          ri: "Jennifer Jones Rotary Club of Windsor-Reseland, Ontario, Canada",
+        },
+        {
+          name: "Lisa Choegyal",
+          date: "(2023-2024)",
+          isCloudLink: true,
+          theme:
+            "https://rotary.circallstrading.com/uploads/create_hope_b96ac5c88b.jpg",
+          photo:
+            "https://rotary.circallstrading.com/uploads/choegyal_4a89deab8d.jpg",
+          ri: "Gordon Mclnally",
+        },
+        {
+          name: "Rupinder (Rupy) Kaur Singh",
+          date: "(2024-2025)",
+          extraInfo: "President elect",
+          isCloudLink: true,
+          theme:
+            "https://rotary.circallstrading.com/uploads/magic_of_rotary_edb27e380f.jpg",
+          photo:
+            "https://rotary.circallstrading.com/uploads/rupy_b4a5d48901.jpg",
+          ri: "Stephanie A. Urchick",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -301,7 +353,7 @@ img {
   /* margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0; */
-  border-bottom: 1px solid rgba(250,167,47,0.5);
+  border-bottom: 1px solid rgba(250, 167, 47, 0.5);
 }
 
 .date {
@@ -316,7 +368,8 @@ img {
 .details h2 {
   font-size: 18px;
 }
-hr, .hr-president{
-  background-color: #FAA72F;
+hr,
+.hr-president {
+  background-color: #faa72f;
 }
 </style>

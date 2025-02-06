@@ -150,7 +150,6 @@ export default {
       formData.append("your_phone", this.user.your_phone);
       formData.append("your_email", this.user.your_email);
       formData.append("your_message", this.user.your_message);
-      console.log(formData);
       this.$API.sendContactUs(formData).then(data => {
         if (data.data.status == "mail_sent") {
           this.sending = false;
