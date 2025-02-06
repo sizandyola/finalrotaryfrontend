@@ -4,37 +4,74 @@
       <h1 class="text-left">Community Projects</h1>
       <hr class="my-4" />
 
-        <div class="custom-card">
+      <div class="custom-card">
         <div class="row align-items-center">
           <div class="col-md-12">
-               <h4 class="p-1">Educational Assistance to Children of Brick Factory Workers</h4>
+            <h4 class="p-1">
+              Educational Assistance to Children of Brick Factory Workers
+            </h4>
             <div class="row p-0">
               <div class="col-md-4 d-flex align-items-center">
                 <img
                   src="https://admin.rotarymidtown.org.np/wp-content/uploads/2021/04/PHOTO-BRICK-FACTORY-home-page.jpg"
                   class="img-fluid"
                 />
-              
               </div>
               <div class="col-md-8">
-             
                 <p class="text-justify p-3">
-                  Background: Brick making is a seasonal industry which operates during the winter months soon after the monsoon and harvesting season. The professional workers are hired prior to the season from villages far and wide and live in the temporary shelter made of unbaked bricks in the kiln area for over seven months. Since both the parents are employed the children accompany them without any thought of their immediate and future education. It is but reasonable that schools do not grant such a long leave hence often parent have to choose between earning and education and obviously the first is chosen it being their profession for sustenance of their family. Since parents have taken their children out of school against the school regime at the risk of termination from school readmission after six months absentee is not guaranteed. </p>
-
+                  Background: Brick making is a seasonal industry which operates
+                  during the winter months soon after the monsoon and harvesting
+                  season. The professional workers are hired prior to the season
+                  from villages far and wide and live in the temporary shelter
+                  made of unbaked bricks in the kiln area for over seven months.
+                  Since both the parents are employed the children accompany
+                  them without any thought of their immediate and future
+                  education. It is but reasonable that schools do not grant such
+                  a long leave hence often parent have to choose between earning
+                  and education and obviously the first is chosen it being their
+                  profession for sustenance of their family. Since parents have
+                  taken their children out of school against the school regime
+                  at the risk of termination from school readmission after six
+                  months absentee is not guaranteed.
+                </p>
               </div>
             </div>
             <p>
-Besides how would the children be able to cope with the studies when during this period they would be playing ( the very young ones ) the older ones are helping their parents in the same trade of brick making . Thus the NGO KOPILA NEPA with six satellite centers provides humanitarian service for these disadvantaged mobile children who are dropouts because of necessity. So far governmental support has not be granted as according to their ruling an Institute has to be functional for the whole year to be eligible for support. However we are looking for loop holes in the system to help in sustaining such program. The main center KOPILA Nepa at Sanu Gaon provides the following: <br>
+              Besides how would the children be able to cope with the studies
+              when during this period they would be playing ( the very young
+              ones ) the older ones are helping their parents in the same trade
+              of brick making . Thus the NGO KOPILA NEPA with six satellite
+              centers provides humanitarian service for these disadvantaged
+              mobile children who are dropouts because of necessity. So far
+              governmental support has not be granted as according to their
+              ruling an Institute has to be functional for the whole year to be
+              eligible for support. However we are looking for loop holes in the
+              system to help in sustaining such program. The main center KOPILA
+              Nepa at Sanu Gaon provides the following: <br />
 
-Preprimary and primary classes which is operational for some local children the and those of the brick factory workers who remain back to maintain the kiln throughout the year. On completion they are helped to getting admission into regular government school (with which this Institute has an understanding ) by even paying the initial admission fee and uniform for them. <br>
+              Preprimary and primary classes which is operational for some local
+              children the and those of the brick factory workers who remain
+              back to maintain the kiln throughout the year. On completion they
+              are helped to getting admission into regular government school
+              (with which this Institute has an understanding ) by even paying
+              the initial admission fee and uniform for them. <br />
 
-Adult literacy and skill sewing class for the female gender local and brick workers. Is also being operated. This a government recognized training program for one year with awarding of valid certificate. Many women seek for further three months advanced course or they venture out to open small outlet or seek employment in the same profession. Classes for the older children of brick factory workers during the season <br>
+              Adult literacy and skill sewing class for the female gender local
+              and brick workers. Is also being operated. This a government
+              recognized training program for one year with awarding of valid
+              certificate. Many women seek for further three months advanced
+              course or they venture out to open small outlet or seek employment
+              in the same profession. Classes for the older children of brick
+              factory workers during the season <br />
 
-Provision of nutritious Mid- Day meal <br>
-Sustaining the transport system for the center <br>
-Provision of uniform plus educational material for the six month academic session <br>
-Running of Day Care Center for children with Cerebral Palsy and in co-operation of these children in the program and activities of the normal children <br>
-                </p>
+              Provision of nutritious Mid- Day meal <br />
+              Sustaining the transport system for the center <br />
+              Provision of uniform plus educational material for the six month
+              academic session <br />
+              Running of Day Care Center for children with Cerebral Palsy and in
+              co-operation of these children in the program and activities of
+              the normal children <br />
+            </p>
           </div>
         </div>
       </div>
@@ -316,12 +353,65 @@ Running of Day Care Center for children with Cerebral Palsy and in co-operation 
               >
             </p>
           </div>
+
+          <div class="pt-3 pb-3" style="width:100%">
+            <div class="row">
+              <div class="col-md-8">
+                <video width="100%" height="400" controls>
+                  <source
+                    src="/images/our-projects/eye-sight/highlight.mp4"
+                    type="video/mp4"
+                  />
+
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="col-md-4">
+                <video width="100%" height="400" controls>
+                  <source
+                    src="/images/our-projects/eye-sight/feeding-video.mp4"
+                    type="video/mp4"
+                  />
+
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-md-4"
+              v-for="(item, index) in Array(17).fill(null)"
+              :key="index"
+            >
+              <img
+                :src="'/images/our-projects/eye-sight/' + (index + 1) + '.jpg'"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-md-4"
+              v-for="(item, index) in Array(17).fill(null)"
+              :key="index"
+            >
+              <img
+                :src="
+                  '/images/our-projects/eye-sight/portriats/' +
+                    (index + 1) +
+                    '.jpg'
+                "
+                class="img-fluid"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 
 <script>
 import DigitalLibrary from "./DigitalLibrary";
@@ -410,5 +500,3 @@ hr {
   background-color: #025198;
 }
 </style>
-
-
