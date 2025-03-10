@@ -274,10 +274,10 @@ export default {
           name: "Pramod Paudel",
           date: "(2021-2022)",
           theme:
-            "https://rotary.circallstrading.com/uploads/serve_to_change_lives_76dc293a76.png",
+            "https://backend.rotarymidtown.org.np/uploads/serve_to_change_lives_76dc293a76.png",
           isCloudLink: true,
           photo:
-            "https://rotary.circallstrading.com/uploads/poudel_pramod_4817c07938.jpg",
+            "https://backend.rotarymidtown.org.np/uploads/poudel_pramod_4817c07938.jpg",
           ri:
             "Shekar Mehta, Rotary Club of Calcutta - Mahanagar, West Bengal, India",
         },
@@ -286,9 +286,9 @@ export default {
           date: "(2022-2023)",
           isCloudLink: true,
           theme:
-            "https://rotary.circallstrading.com/uploads/imagine_rotary_46322946a2.png",
+            "https://backend.rotarymidtown.org.np/uploads/imagine_rotary_46322946a2.png",
           photo:
-            "https://rotary.circallstrading.com/uploads/nirmal_e56f7669ec.jpeg",
+            "https://backend.rotarymidtown.org.np/uploads/nirmal_e56f7669ec.jpeg",
           ri: "Jennifer Jones Rotary Club of Windsor-Reseland, Ontario, Canada",
         },
         {
@@ -296,9 +296,9 @@ export default {
           date: "(2023-2024)",
           isCloudLink: true,
           theme:
-            "https://rotary.circallstrading.com/uploads/create_hope_b96ac5c88b.jpg",
+            "https://backend.rotarymidtown.org.np/uploads/create_hope_b96ac5c88b.jpg",
           photo:
-            "https://rotary.circallstrading.com/uploads/choegyal_4a89deab8d.jpg",
+            "https://backend.rotarymidtown.org.np/uploads/choegyal_4a89deab8d.jpg",
           ri: "Gordon Mclnally",
         },
         {
@@ -307,9 +307,9 @@ export default {
           extraInfo: "President elect",
           isCloudLink: true,
           theme:
-            "https://rotary.circallstrading.com/uploads/magic_of_rotary_edb27e380f.jpg",
+            "https://backend.rotarymidtown.org.np/uploads/magic_of_rotary_edb27e380f.jpg",
           photo:
-            "https://rotary.circallstrading.com/uploads/rupy_b4a5d48901.jpg",
+            "https://backend.rotarymidtown.org.np/uploads/rupy_b4a5d48901.jpg",
           ri: "Stephanie A. Urchick",
         },
       ],

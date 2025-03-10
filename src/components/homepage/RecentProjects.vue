@@ -5,12 +5,17 @@
       <hr />
 
       <div class="row">
-       
-
         <div class="col-md-4 mt-3">
           <div class="card" style="display:table">
-            <div class="card-img-top" style="min-height: 290px; display: flex; align-items: center;">
-              <img src="https://rotary.circallstrading.com/uploads/career_connection_efec7d5c62.png" class="img-fluid" alt />
+            <div
+              class="card-img-top"
+              style="min-height: 290px; display: flex; align-items: center;"
+            >
+              <img
+                src="https://backend.rotarymidtown.org.np/uploads/career_connection_efec7d5c62.png"
+                class="img-fluid"
+                alt
+              />
             </div>
             <div class="card-body">
               <div class="card-title">
@@ -18,7 +23,10 @@
               </div>
               <div class="card-text read-more">
                 <i class="fas fa-external-link-alt mr-2"></i>
-                <router-link :to="{name:'Global Grants',hash:'#career-connection'}">Read More</router-link>
+                <router-link
+                  :to="{ name: 'Global Grants', hash: '#career-connection' }"
+                  >Read More</router-link
+                >
               </div>
             </div>
           </div>
@@ -27,7 +35,11 @@
         <div class="col-md-4 mt-3">
           <div class="card" style="display:table">
             <div class="card-img-top">
-              <img src="/images/our-projects/snakebite.jpg" class="img-fluid" alt />
+              <img
+                src="/images/our-projects/snakebite.jpg"
+                class="img-fluid"
+                alt
+              />
             </div>
             <div class="card-body">
               <div class="card-title">
@@ -35,9 +47,9 @@
               </div>
               <div class="card-text read-more">
                 <i class="fas fa-external-link-alt mr-2"></i>
-                <router-link
-                  :to="{name:'Global Grants',hash:'#snakebite'}"
-                >Read More</router-link>
+                <router-link :to="{ name: 'Global Grants', hash: '#snakebite' }"
+                  >Read More</router-link
+                >
               </div>
             </div>
           </div>
@@ -45,15 +57,24 @@
         <div class="col-md-4 mt-3">
           <div class="card" style="display:table">
             <div class="card-img-top">
-              <img src="/images/our-projects/first-steps.jpg" class="img-fluid" />
+              <img
+                src="/images/our-projects/first-steps.jpg"
+                class="img-fluid"
+              />
             </div>
             <div class="card-body">
               <div class="card-title">
-                <h2>Early Years Education Support Project in Nuwakot and Sindulpalchowk</h2>
+                <h2>
+                  Early Years Education Support Project in Nuwakot and
+                  Sindulpalchowk
+                </h2>
               </div>
               <div class="card-text read-more">
                 <i class="fas fa-external-link-alt mr-2"></i>
-                <router-link :to="{name:'Global Grants',hash:'#education-support'}">Read More</router-link>
+                <router-link
+                  :to="{ name: 'Global Grants', hash: '#education-support' }"
+                  >Read More</router-link
+                >
               </div>
             </div>
           </div>
@@ -63,19 +84,17 @@
   </div>
 </template>
 
-
 <script>
 export default {
   data() {
     return {};
-  }
+  },
 };
 </script>
 
 <style scoped>
 .section {
-  background-color:#FAA72F; 
-  
+  background-color: #faa72f;
 }
 h1 {
   color: #fff;
@@ -240,10 +259,8 @@ hr {
   color: #faa72f;
 }
 @media only screen and (max-width: 768px) {
-  body{
+  body {
     text-align: center;
   }
 }
 </style>
-
-
