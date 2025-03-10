@@ -5,6 +5,110 @@
       <hr class="my-4" />
 
       <div class="custom-card">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="/images/our-projects/gift-of-sight.jpg"
+              class="img-fluid"
+              alt
+            />
+          </div>
+
+          <div class="col-md-8">
+            <h4 class="p-1">Gift of Sight Eye Camp</h4>
+            <p class="text-justify p-3">
+              Gift of Sight Eye Camp is an ongoing project conducted every year
+              with the help of the Rotary Club of Singapore Garden City,
+              Singapore in collaboration with the Tilganga Institute of
+              Ophthalmology in Hetauda. This project annually brings a few
+              hundred villagers from remote areas to the eye hospital for
+              cataract surgery and eye care. To date, thousands of poor people
+              have received the ‘gift of sight’ thanks to this generous
+              donation.
+              <br />
+              <b>See Previous Years</b>
+              <br />
+              <br />
+              <a
+                class="gift-of-sight"
+                href="/images/our-projects/Gift of Sight 2014.pdf"
+                taget="_blank"
+                >Gift Of Sight 2014</a
+              >
+              &nbsp;
+              <a
+                class="gift-of-sight"
+                href="/images/our-projects/Gift of Sight 2015.pdf"
+                taget="_blank"
+                >Gift Of Sight 2015</a
+              >
+              &nbsp;
+              <a
+                class="gift-of-sight"
+                href="/images/our-projects/Gift of Sight 2016.pdf"
+                taget="_blank"
+                >Gift Of Sight 2016</a
+              >
+            </p>
+          </div>
+
+          <div class="pt-3 pb-3" style="width:100%">
+            <div class="row">
+              <div class="col-md-8">
+                <video width="100%" height="400" controls>
+                  <source
+                    src="/images/our-projects/eye-sight/highlight.mp4"
+                    type="video/mp4"
+                  />
+
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="col-md-4">
+                <video width="100%" height="400" controls>
+                  <source
+                    src="/images/our-projects/eye-sight/feeding-video.mp4"
+                    type="video/mp4"
+                  />
+
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-md-4"
+              v-for="(item, index) in Array(17).fill(null)"
+              :key="index"
+            >
+              <img
+                :src="'/images/our-projects/eye-sight/' + (index + 1) + '.jpg'"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-md-4"
+              v-for="(item, index) in Array(17).fill(null)"
+              :key="index"
+            >
+              <img
+                :src="
+                  '/images/our-projects/eye-sight/portriats/' +
+                    (index + 1) +
+                    '.jpg'
+                "
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-card">
         <div class="row align-items-center">
           <div class="col-md-12">
             <h4 class="p-1">
@@ -306,109 +410,6 @@
 
       <!-- Digital library -->
       <!-- <DigitalLibrary /> -->
-      <div class="custom-card">
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="/images/our-projects/gift-of-sight.jpg"
-              class="img-fluid"
-              alt
-            />
-          </div>
-
-          <div class="col-md-8">
-            <h4 class="p-1">Gift of Sight Eye Camp</h4>
-            <p class="text-justify p-3">
-              Gift of Sight Eye Camp is an ongoing project conducted every year
-              with the help of the Rotary Club of Singapore Garden City,
-              Singapore in collaboration with the Tilganga Institute of
-              Ophthalmology in Hetauda. This project annually brings a few
-              hundred villagers from remote areas to the eye hospital for
-              cataract surgery and eye care. To date, thousands of poor people
-              have received the ‘gift of sight’ thanks to this generous
-              donation.
-              <br />
-              <b>See Previous Years</b>
-              <br />
-              <br />
-              <a
-                class="gift-of-sight"
-                href="/images/our-projects/Gift of Sight 2014.pdf"
-                taget="_blank"
-                >Gift Of Sight 2014</a
-              >
-              &nbsp;
-              <a
-                class="gift-of-sight"
-                href="/images/our-projects/Gift of Sight 2015.pdf"
-                taget="_blank"
-                >Gift Of Sight 2015</a
-              >
-              &nbsp;
-              <a
-                class="gift-of-sight"
-                href="/images/our-projects/Gift of Sight 2016.pdf"
-                taget="_blank"
-                >Gift Of Sight 2016</a
-              >
-            </p>
-          </div>
-
-          <div class="pt-3 pb-3" style="width:100%">
-            <div class="row">
-              <div class="col-md-8">
-                <video width="100%" height="400" controls>
-                  <source
-                    src="/images/our-projects/eye-sight/highlight.mp4"
-                    type="video/mp4"
-                  />
-
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="col-md-4">
-                <video width="100%" height="400" controls>
-                  <source
-                    src="/images/our-projects/eye-sight/feeding-video.mp4"
-                    type="video/mp4"
-                  />
-
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div
-              class="col-md-4"
-              v-for="(item, index) in Array(17).fill(null)"
-              :key="index"
-            >
-              <img
-                :src="'/images/our-projects/eye-sight/' + (index + 1) + '.jpg'"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-md-4"
-              v-for="(item, index) in Array(17).fill(null)"
-              :key="index"
-            >
-              <img
-                :src="
-                  '/images/our-projects/eye-sight/portriats/' +
-                    (index + 1) +
-                    '.jpg'
-                "
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
